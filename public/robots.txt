@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://steroidssupplies.co.uk
+
+# Sitemaps
+Sitemap: https://steroidssupplies.co.uk/sitemap.xml
