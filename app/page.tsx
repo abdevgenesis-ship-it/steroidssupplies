@@ -165,7 +165,7 @@ export default async function Page() {
   };
 
   return (
-    <main className="bg-white pb-14 text-foreground">
+    <main className="bg-background pb-14 text-foreground">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

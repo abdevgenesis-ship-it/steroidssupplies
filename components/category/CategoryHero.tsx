@@ -46,7 +46,7 @@ export function CategoryHero({
       )}
 
       <Container className="relative flex min-h-[18rem] items-end py-6 sm:min-h-[22rem] sm:py-8">
-        <div className="max-w-3xl rounded-2xl border border-border/70 bg-white/95 p-6 shadow-sm backdrop-blur-sm sm:p-8">
+        <div className="max-w-3xl rounded-2xl border border-border/70 bg-card/95 p-6 shadow-sm backdrop-blur-sm sm:p-8">
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
             {eyebrow}
           </p>

@@ -50,7 +50,7 @@ export function CategoryBestsellerRail({ categoryName, products }: CategoryBests
   const cards = products.slice(0, 3).map(toCard);
 
   return (
-    <div className="min-h-[236px] border-t border-border/70 bg-white px-4 py-2.5 sm:min-h-[258px] sm:px-5 sm:py-3 lg:px-6">
+    <div className="min-h-[236px] border-t border-border/70 bg-card px-4 py-2.5 sm:min-h-[258px] sm:px-5 sm:py-3 lg:px-6">
       <div className="flex items-end justify-between gap-3">
         <div>
           <p className="text-[9px] font-semibold uppercase tracking-[0.14em] text-highlight sm:text-[10px]">

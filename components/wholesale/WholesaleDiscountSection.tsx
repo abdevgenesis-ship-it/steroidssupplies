@@ -49,13 +49,13 @@ export function WholesaleDiscountSection({ content }: WholesaleDiscountSectionPr
               <article className="rounded-xl border border-border bg-muted/30 p-3.5 transition-all duration-300 hover:border-primary/25 hover:bg-primary/5 sm:p-4">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex items-start gap-3">
-                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white shadow-sm">
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-card shadow-sm">
                       <SiBitcoin className="h-4.5 w-4.5 text-[#F7931A]" />
                     </span>
-                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white shadow-sm">
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-card shadow-sm">
                       <SiEthereum className="h-4.5 w-4.5 text-[#627EEA]" />
                     </span>
-                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white shadow-sm">
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-card shadow-sm">
                       <SiTether className="h-4.5 w-4.5 text-[#26A17B]" />
                     </span>
                   </div>
@@ -70,7 +70,7 @@ export function WholesaleDiscountSection({ content }: WholesaleDiscountSectionPr
 
               <article className="rounded-xl border border-border bg-muted/30 p-3.5 transition-all duration-300 hover:border-primary/25 hover:bg-primary/5 sm:p-4">
                 <div className="flex items-start justify-between gap-3">
-                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white shadow-sm">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-card shadow-sm">
                     <SiRevolut className="h-4.5 w-4.5 text-primary" />
                   </span>
                   <span className="rounded-full border border-highlight/35 bg-highlight/12 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-highlight">
