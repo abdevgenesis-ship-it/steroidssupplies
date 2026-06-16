@@ -53,7 +53,7 @@ function TrustStripCard({
   return (
     <article
       className={cn(
-        "group flex min-h-[8.75rem] min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-2.5 rounded-2xl border border-border/70 bg-white px-2 py-4 text-center shadow-[0_2px_14px_rgb(107_44_145/0.05)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-[0_8px_24px_rgb(107_44_145/0.1)] sm:min-h-[9rem] sm:gap-3 sm:px-3 sm:py-5 lg:px-4",
+        "group flex min-h-[8.75rem] min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-2.5 rounded-2xl border border-border/70 bg-card px-2 py-4 text-center shadow-[0_2px_14px_rgb(196_30_58/0.05)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-[0_8px_24px_rgb(196_30_58/0.1)] sm:min-h-[9rem] sm:gap-3 sm:px-3 sm:py-5 lg:px-4",
         className,
       )}
     >
@@ -91,7 +91,7 @@ export function HomeTrustStrip({ items }: HomeTrustStripProps) {
 
   return (
     <section
-      className="relative z-0 border-section-b-primary bg-[linear-gradient(180deg,#faf8fc_0%,#ffffff_72%)] text-foreground"
+      className="relative z-0 border-section-b-primary bg-background text-foreground"
       aria-label="Delivery and fulfilment highlights"
     >
       <Container className="py-8 sm:py-9 lg:py-10">

@@ -57,7 +57,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en-GB"
-      className={cn("antialiased light", fontMono.variable, "font-sans", inter.variable, spaceGroteskHeading.variable)}
+      className={cn("antialiased dark", fontMono.variable, "font-sans", inter.variable, spaceGroteskHeading.variable)}
       suppressHydrationWarning
     >
       <body>

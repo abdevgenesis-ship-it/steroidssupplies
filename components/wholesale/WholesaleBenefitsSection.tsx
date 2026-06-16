@@ -16,7 +16,7 @@ export function WholesaleBenefitsSection({ content }: WholesaleBenefitsSectionPr
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgb(86_204_242/0.1),transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgb(196_30_58/0.1),transparent_55%)]"
       />
       <div className="relative mx-auto w-full max-w-300 px-4 sm:px-6 lg:px-8">
         <div className="stack-md">

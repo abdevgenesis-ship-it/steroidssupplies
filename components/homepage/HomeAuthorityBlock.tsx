@@ -128,11 +128,11 @@ export function HomeAuthorityBlock({
     <section className="relative overflow-hidden border-section-y-primary bg-background text-foreground">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_20%_20%,rgb(13_148_136/0.10),transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_20%_20%,rgb(196_30_58/0.10),transparent_55%)]"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_90%_80%,rgb(245_158_11/0.08),transparent_50%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_90%_80%,rgb(127_29_29/0.08),transparent_50%)]"
       />
       <Container className="section-y relative">
         {introSplit && (eyebrow.trim() || introSplit.lead.trim()) ? (

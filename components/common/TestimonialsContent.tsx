@@ -75,7 +75,7 @@ export function TestimonialsContent({
       <Card
         size="sm"
         className={cn(
-          "border-foreground/10 flex h-full min-h-80 flex-col transition-transform duration-300 ease-out hover:-translate-y-0.5 hover:z-10 hover:scale-[1.01] hover:border-primary/30 hover:shadow-[0_18px_40px_-24px_rgba(107,44,145,0.35)]",
+          "border-foreground/10 flex h-full min-h-80 flex-col transition-transform duration-300 ease-out hover:-translate-y-0.5 hover:z-10 hover:scale-[1.01] hover:border-primary/30 hover:shadow-[0_18px_40px_-24px_rgba(196,30,58,0.35)]",
           cardClassName,
         )}
       >

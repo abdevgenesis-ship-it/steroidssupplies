@@ -128,7 +128,7 @@ export function ProgrammaticPageTemplate({ page, currentHref, products, categori
             <div className="absolute inset-0 bg-linear-to-br from-muted to-background" aria-hidden="true" />
           )}
 
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgb(107_44_145/0.45),rgb(107_44_145/0.62))]" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgb(196_30_58/0.45),rgb(196_30_58/0.62))]" aria-hidden="true" />
 
           <Container className="relative py-16 sm:py-20">
             <div className="max-w-3xl">

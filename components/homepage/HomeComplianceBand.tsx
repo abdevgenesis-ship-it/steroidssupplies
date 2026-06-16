@@ -21,11 +21,11 @@ export function HomeComplianceBand({
   return (
     <section className="relative overflow-hidden border-section-y bg-primary text-white">
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_0%_0%,rgb(255_110_180/0.18),transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_0%_0%,rgb(196_30_58/0.18),transparent_55%)]"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_100%_100%,rgb(255_138_61/0.14),transparent_50%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_100%_100%,rgb(127_29_29/0.14),transparent_50%)]"
         aria-hidden
       />
 

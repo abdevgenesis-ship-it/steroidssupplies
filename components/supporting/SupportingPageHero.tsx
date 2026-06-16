@@ -39,7 +39,7 @@ export function SupportingPageHero({
       >
         <Image src={imageSrc} alt={title} fill priority unoptimized sizes="100vw" className="object-contain" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.3),transparent_42%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,30,58,0.15),transparent_42%)]" />
       </div>
 
       <HeroContent

@@ -14,11 +14,11 @@ export function WholesaleDiscountSection({ content }: WholesaleDiscountSectionPr
       className="stack-md relative overflow-hidden border-section-y bg-primary py-8 text-white sm:py-10"
     >
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_100%_0%,rgb(255_110_180/0.16),transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_100%_0%,rgb(196_30_58/0.16),transparent_55%)]"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_0%_100%,rgb(86_204_242/0.12),transparent_50%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_0%_100%,rgb(127_29_29/0.12),transparent_50%)]"
         aria-hidden
       />
 
@@ -38,7 +38,7 @@ export function WholesaleDiscountSection({ content }: WholesaleDiscountSectionPr
         </div>
 
         <div className="mt-6 grid gap-4 lg:grid-cols-2">
-          <Card className="group/card overflow-hidden border-0 bg-white text-foreground shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(0,0,0,0.16)]">
+          <Card className="group/card overflow-hidden border border-border bg-card text-foreground shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-[0_16px_48px_rgba(0,0,0,0.16)]">
             <CardHeader className="border-b border-border/60 bg-linear-to-r from-primary/5 to-highlight/5">
               <CardTitle className="text-primary">{content.paymentCardTitle}</CardTitle>
               <CardDescription className="text-muted-foreground">
@@ -84,7 +84,7 @@ export function WholesaleDiscountSection({ content }: WholesaleDiscountSectionPr
             </CardContent>
           </Card>
 
-          <Card className="group/card overflow-hidden border-0 bg-white text-foreground shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(0,0,0,0.16)]">
+          <Card className="group/card overflow-hidden border border-border bg-card text-foreground shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-[0_16px_48px_rgba(0,0,0,0.16)]">
             <CardHeader className="border-b border-border/60 bg-linear-to-r from-sky/8 to-orange/8">
               <CardTitle className="text-primary">{content.volumeCardTitle}</CardTitle>
               <CardDescription className="text-muted-foreground">
