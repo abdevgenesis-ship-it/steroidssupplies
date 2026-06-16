@@ -96,7 +96,7 @@ function mapSanityProductToCard(product: Product): ShopProductCardData {
     (categorySource && "group" in categorySource ? categorySource.group : undefined) ||
     "Injectable Steroids";
 
-  const productType = product.productType || "Disposable";
+  const productType = product.productType || "Injectable";
   const puffCount = typeof product.puffCount === "number" ? product.puffCount : 0;
 
   return {
