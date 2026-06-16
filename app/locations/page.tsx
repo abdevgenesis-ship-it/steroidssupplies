@@ -141,7 +141,7 @@ export default async function LocationsPage() {
               <div className="mt-4 space-y-4">
                 <article className="rounded-2xl border border-border bg-background/70 p-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-highlight/30 hover:bg-highlight/5">
                   <h2 className="font-heading text-lg font-semibold">50 US states covered</h2>
-                  <p className="mt-1 text-sm text-muted-foreground">Retail, smoke shop, and convenience channels supported with verified age-gated delivery processes.</p>
+                  <p className="mt-1 text-sm text-muted-foreground">Gym networks, private labels, and independent distributors supported with discreet, verified delivery processes.</p>
                 </article>
                 <article className="rounded-2xl border border-border bg-background/70 p-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-highlight/30 hover:bg-highlight/5">
                   <h2 className="font-heading text-lg font-semibold">International available</h2>

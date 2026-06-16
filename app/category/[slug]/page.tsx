@@ -84,7 +84,7 @@ function mapSanityProductToCard(product: Product): ShopProductCardData {
   const imageSource = product.images?.[0];
   const image = imageSource?.asset
     ? urlFor(imageSource).width(960).height(720).fit("crop").url()
-    : "/images/categories/bulk-thc-vapes.png";
+    : "/images/authority_scene.png";
 
   const brandName =
     brandSource && "name" in brandSource && typeof brandSource.name === "string"
@@ -94,7 +94,7 @@ function mapSanityProductToCard(product: Product): ShopProductCardData {
   const categoryGroup =
     product.categoryGroup ||
     (categorySource && "group" in categorySource ? categorySource.group : undefined) ||
-    "Nicotine";
+    "Injectable Steroids";
 
   const productType = product.productType || "Disposable";
   const puffCount = typeof product.puffCount === "number" ? product.puffCount : 0;

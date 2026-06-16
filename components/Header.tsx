@@ -86,16 +86,15 @@ export function Header({ categories }: HeaderProps) {
             <Link href="/" className="flex items-center gap-2.5 sm:gap-3">
               <Image
                 src="/logo.png"
-                alt="THCPensBulk — Bulk THC Vapes & Wholesale 510 Carts"
+                alt="SteroidsSupplies — Premium Anabolic Steroids For Sale UK & Global"
                 width={48}
                 height={48}
                 className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 object-contain shrink-0"
                 priority
               />
               <span className="whitespace-nowrap text-[15px] font-semibold font-heading tracking-widest sm:text-[20px] lg:text-[22px]">
-                <span className="text-foreground">THC </span>
-                <span className="text-primary">PENS </span>
-                <span className="text-foreground">BULK</span>
+                <span className="text-foreground">STEROIDS </span>
+                <span className="text-primary">SUPPLIES</span>
               </span>
             </Link>
           </div>

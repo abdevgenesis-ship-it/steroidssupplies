@@ -1,6 +1,6 @@
 import { createClient } from "@sanity/client";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://thcpensbulk.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://steroidssupplies.co.uk";
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
 const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2025-03-01";

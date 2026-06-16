@@ -66,8 +66,8 @@ type FooterProps = {
 };
 
 export function Footer({
-  warningText = "For adults 21+ only. THC products may cause impairment. Do not drive or operate heavy machinery. Keep out of reach of children. THCPensBulk does not sell to persons under 21.",
-  complianceText = `${FOOTER_COMPLIANCE_PREFIX} is a licensed B2B wholesale distributor of THC vape hardware and cartridges. Products are sold for lawful use only. Buyers are responsible for compliance with applicable local laws.`,
+  warningText = "For adults 18+ only. Anabolic steroids are potent hormonal compounds. Do not use if pregnant or nursing. Do not operate heavy machinery after administration. Keep out of reach of children.",
+  complianceText = `${FOOTER_COMPLIANCE_PREFIX} is a global B2C and B2B wholesale supplier of performance compounds. All products are sold for lawful use only. Buyers are solely responsible for compliance with all applicable laws in their jurisdiction.`,
 }: FooterProps) {
   return (
     <footer className="glass-chrome border-section-t text-foreground">

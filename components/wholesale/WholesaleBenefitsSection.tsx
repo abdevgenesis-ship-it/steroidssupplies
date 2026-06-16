@@ -65,7 +65,7 @@ export function WholesaleBenefitsSection({ content }: WholesaleBenefitsSectionPr
             })}
           </div>
           <p className="text-center text-xs text-muted-foreground sm:text-sm">
-            Designed for smoke shops, dispensaries, convenience stores, and regional distributors.
+            Designed for gym networks, private labels, independent distributors, and high-volume retail buyers.
           </p>
         </div>
       </div>

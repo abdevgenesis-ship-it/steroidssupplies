@@ -199,9 +199,9 @@ export function BlogBody({
               About the Author
             </p>
             <p className="mt-3 text-base leading-7 text-muted-foreground">
-              This article was prepared for THCPensBulk by {authorName}{" "}
-              to support cannabis retailers and wholesale buyers with practical
-              industry and operations insight.
+              This article was prepared for SteroidsSupplies by {authorName}{" "}
+              to support athletes and wholesale buyers with practical
+              industry and compound insight.
             </p>
           </Card>
         </RevealItem>

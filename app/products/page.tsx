@@ -50,10 +50,10 @@ export async function generateMetadata({ searchParams }: ProductsPageProps): Pro
   const isPaginated = page > 1;
   const canonical = isPaginated ? `${SITE_URL}/products?page=${page}` : `${SITE_URL}/products`;
 
-  const baseTitle = "Shop Bulk THC Vapes & 510 Cartridges | Wholesale Catalog";
+  const baseTitle = "Shop Anabolic Steroids | Injectable, Oral & PCT Wholesale Catalog";
   const title = isPaginated ? `${baseTitle} | Page ${page}` : baseTitle;
   const description =
-    `Buy bulk THC vapes and wholesale 510 cartridges from ${SITE_NAME}. Browse COA-verified inventory, compare formats, and request B2B wholesale pricing.`;
+    `Buy anabolic steroids online from ${SITE_NAME}. Browse HPLC-verified injectable steroids, oral tablets, and PCT supplements. Compare compounds and request B2B wholesale pricing.`;
 
   return {
     title,
@@ -108,7 +108,7 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
   const cmsCategories =
     Array.isArray(shopPage?.categories) && shopPage.categories.length > 0
       ? shopPage.categories
-      : ["Disposable Vapes", "510 Cartridges", "Hardware"];
+      : ["Injectable Steroids", "Oral Steroids", "PCT Supplements"];
 
   const safeCategories = initialCategoryFilter
     ? Array.from(new Set([...cmsCategories, initialCategoryFilter]))

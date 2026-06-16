@@ -47,7 +47,7 @@ export function normalizeSiteUrl(raw?: string): string {
   return value.replace(/\/$/, "");
 }
 
-const DEFAULT_PUBLIC_SITE_URL = "https://www.thcpensbulk.com";
+const DEFAULT_PUBLIC_SITE_URL = "https://www.steroidssupplies.co.uk";
 
 function isPreviewSiteUrl(url: string): boolean {
   return /localhost|127\.0\.0\.1|\.vercel\.app/i.test(url);

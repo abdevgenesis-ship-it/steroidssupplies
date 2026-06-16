@@ -48,10 +48,10 @@ export function SupportingPageJsonLd({
     "@type": "WebPage",
     name: pageTitle,
     url: `${SITE_URL}${currentHref}`,
-    description: pageDescription || `Read ${pageTitle} from THCPensBulk.`,
+    description: pageDescription || `Read ${pageTitle} from SteroidsSupplies.`,
     isPartOf: {
       "@type": "WebSite",
-      name: "THCPensBulk",
+      name: "SteroidsSupplies",
       url: SITE_URL,
     },
     breadcrumb: breadcrumbJsonLd,

@@ -38,7 +38,7 @@ function mapProductsToCards(products: Product[]) {
     const firstVariantPrice = product.variants?.find((variant) => typeof variant.price === "number")?.price;
     const imageUrl = imageSource?.asset
       ? urlFor(imageSource).width(800).height(800).fit("crop").url()
-      : "/images/categories/bulk-thc-vapes.png";
+      : "/images/authority_scene.png";
 
     return {
       id: product._id,

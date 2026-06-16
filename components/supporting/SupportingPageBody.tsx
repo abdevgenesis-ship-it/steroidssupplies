@@ -53,7 +53,7 @@ export function SupportingPageBody({ page }: SupportingPageBodyProps) {
     page.whyChooseUsPoints
       ?.map((point) => (typeof point === "string" ? point.trim() : ""))
       .filter((point): point is string => Boolean(point)) ?? [
-      "We maintain category-focused wholesale inventory designed for smoke shops and retail buyers.",
+      "We maintain category-focused wholesale inventory designed for gym networks and B2B buyers.",
       "Our team helps with fast quote support, practical reorder guidance, and product-mix planning.",
       "We keep compliance-aware shipping workflows so your wholesale operations stay predictable.",
     ];

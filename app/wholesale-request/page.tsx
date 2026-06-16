@@ -38,15 +38,16 @@ type CartItemQuery = {
   price?: number;
 };
 
-type InterestKeyword = "disposable-vapes" | "510-carts" | "hardware";
+type InterestKeyword = "injectable-steroids" | "oral-steroids" | "pct-supplements" | "performance-bundles";
 
 const PRODUCT_INTEREST_KEYWORDS: Array<{
   id: InterestKeyword;
   patterns: RegExp[];
 }> = [
-  { id: "disposable-vapes", patterns: [/\bdisposable\b/i, /\bthc\b/i, /\bvape\b/i] },
-  { id: "510-carts", patterns: [/\b510\b/i, /\bcartridge\b/i, /\bcart\b/i] },
-  { id: "hardware", patterns: [/\bhardware\b/i, /\bbattery\b/i, /\bmod\b/i] },
+  { id: "injectable-steroids", patterns: [/\binjectable\b/i, /\btrenbolone\b/i, /\btestosterone\b/i, /\bnandrolone\b/i, /\bvial\b/i] },
+  { id: "oral-steroids", patterns: [/\boral\b/i, /\banavar\b/i, /\bdianabol\b/i, /\bwinstrol\b/i, /\btablet\b/i] },
+  { id: "pct-supplements", patterns: [/\bpct\b/i, /\bnolvadex\b/i, /\bclomid\b/i, /\baromasin\b/i, /\brecovery\b/i] },
+  { id: "performance-bundles", patterns: [/\bbundle\b/i, /\bstack\b/i, /\bbulk\b/i, /\bwholesale\b/i] },
 ];
 
 function inferProductInterests(lines: string[]) {
@@ -67,9 +68,10 @@ function mapKeywordInterestsToOptionIds(
   const optionByKeyword = new Map<InterestKeyword, string>()
   for (const option of formConfig.productInterests) {
     const label = option.label.toLowerCase()
-    if (label.includes("disposable") && !optionByKeyword.has("disposable-vapes")) optionByKeyword.set("disposable-vapes", option.value)
-    if ((label.includes("510") || label.includes("cart")) && !optionByKeyword.has("510-carts")) optionByKeyword.set("510-carts", option.value)
-    if (label.includes("hardware") && !optionByKeyword.has("hardware")) optionByKeyword.set("hardware", option.value)
+    if (label.includes("injectable") && !optionByKeyword.has("injectable-steroids")) optionByKeyword.set("injectable-steroids", option.value)
+    if (label.includes("oral") && !optionByKeyword.has("oral-steroids")) optionByKeyword.set("oral-steroids", option.value)
+    if (label.includes("pct") && !optionByKeyword.has("pct-supplements")) optionByKeyword.set("pct-supplements", option.value)
+    if ((label.includes("bundle") || label.includes("stack")) && !optionByKeyword.has("performance-bundles")) optionByKeyword.set("performance-bundles", option.value)
   }
 
   return keywords

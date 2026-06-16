@@ -20,8 +20,8 @@ type ProductPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-function getLiveProductTypeCategory(product: Product): "disposable" | "cartridge" | "thc" {
-  const productType = product.productType || "Disposable";
+function getLiveProductTypeCategory(product: Product): "injectable" | "oral" | "pct" {
+  const productType = product.productType || "Injectable";
   const category = product.category;
   const categoryName =
     category && "name" in category && typeof category.name === "string"
@@ -32,15 +32,15 @@ function getLiveProductTypeCategory(product: Product): "disposable" | "cartridge
       ? category.group
       : undefined;
 
-  if (productType === "Cartridge" || categoryName.includes("cart")) {
-    return "cartridge";
+  if (categoryGroup === "Oral Steroids" || categoryName.includes("oral") || productType === "Tablet") {
+    return "oral";
   }
 
-  if (categoryGroup === "THC" || categoryGroup === "THCA" || productType === "Pod") {
-    return "thc";
+  if (categoryGroup === "PCT Supplements" || categoryName.includes("pct") || productType === "PCT") {
+    return "pct";
   }
 
-  return "disposable";
+  return "injectable";
 }
 
 function getProductBasePrice(variants?: ProductVariant[]) {
@@ -61,16 +61,16 @@ function getProductBasePrice(variants?: ProductVariant[]) {
   return Math.min(...prices);
 }
 
-function getCategoryBreadcrumb(product: Product, category: "disposable" | "cartridge" | "thc") {
+function getCategoryBreadcrumb(product: Product, category: "injectable" | "oral" | "pct") {
   const categoryRef = product.category;
   const categoryLabel =
     categoryRef && "name" in categoryRef && typeof categoryRef.name === "string"
       ? categoryRef.name
-      : category === "cartridge"
-        ? "Cartridges"
-        : category === "thc"
-          ? "THC"
-          : "Disposables";
+      : category === "oral"
+        ? "Oral Steroids"
+        : category === "pct"
+          ? "PCT Supplements"
+          : "Injectable Steroids";
   const categorySlug =
     categoryRef && "slug" in categoryRef && categoryRef.slug?.current
       ? categoryRef.slug.current

@@ -44,7 +44,7 @@ export type Category = SanityDocumentBase & {
   _type: "category";
   name: string;
   slug: Slug;
-  group?: "Nicotine" | "THC" | "CBD" | "THCA" | "THC Carts";
+  group?: "Injectable Steroids" | "Oral Steroids" | "PCT Supplements" | "Performance Bundles" | "Wholesale Bundles";
   shortDescription?: string;
   description?: unknown[];
   image?: SanityImage;
@@ -120,7 +120,7 @@ export type BrandLite = {
 export type CategoryLite = {
   name?: string;
   slug?: Slug;
-  group?: "Nicotine" | "THC" | "CBD" | "THCA";
+  group?: "Injectable Steroids" | "Oral Steroids" | "PCT Supplements" | "Performance Bundles" | "Wholesale Bundles";
 };
 
 export type ProductSpecs = {
@@ -152,8 +152,8 @@ export type Product = SanityDocumentBase & {
   variants?: ProductVariant[];
   category?: SanityReference | CategoryLite;
   brand?: SanityReference | BrandLite;
-  productType?: "Disposable" | "Cartridge" | "Pod";
-  categoryGroup?: "Nicotine" | "THC" | "CBD" | "THCA";
+  productType?: "Injectable" | "Oral" | "Tablet" | "PCT" | "Vial";
+  categoryGroup?: "Injectable Steroids" | "Oral Steroids" | "PCT Supplements" | "Performance Bundles" | "Wholesale Bundles";
   specs?: ProductSpecs;
   shippingInfo?: ProductShippingInfo;
   isFeatured?: boolean;
@@ -190,11 +190,11 @@ export type FAQItem = SanityDocumentBase & {
     | "Payment"
     | "Products"
     | "Compliance"
-    | "Nicotine"
-    | "CBD"
-    | "THC"
-    | "THCA"
-    | "THC Carts";
+    | "Injectables"
+    | "Orals"
+    | "PCT"
+    | "Steroids"
+    | "Wholesale";
   productCategories?: Array<{
     _id: string;
     name?: string;

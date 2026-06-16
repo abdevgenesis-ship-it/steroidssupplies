@@ -13,7 +13,7 @@ export function NicotineTHCWarning({
 }: NicotineTHCWarningProps) {
   return (
     <div className="space-y-5 rounded-md border border-destructive/20 bg-destructive/5 p-4 sm:space-y-6 sm:p-6">
-      {/* Nicotine Warning */}
+      {/* Safety Warning */}
       <div>
         <div className="flex items-start gap-3 sm:gap-4">
           <AlertTriangle className="mt-0.5 shrink-0 text-destructive" size={20} />
@@ -21,21 +21,21 @@ export function NicotineTHCWarning({
             <h3 className="text-base font-semibold text-destructive sm:text-lg">Product Safety</h3>
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground sm:text-base">
               {nicotineWarning ||
-                "Keep out of reach of children and pets. THC vape products may cause impairment. Do not drive or operate heavy machinery after use. Not suitable for pregnant or breastfeeding individuals."}
+                "For adults 18 years of age or older only. Keep all performance compounds out of reach of children and pets. Do not use if pregnant or nursing. Never administer any compound without direct medical supervision from a licensed clinical professional."}
             </p>
           </div>
         </div>
       </div>
 
-      {/* THC Warning */}
+      {/* AAS Notice */}
       <div className="border-t border-destructive/20 pt-5 sm:pt-6">
         <div className="flex items-start gap-3 sm:gap-4">
           <AlertTriangle className="mt-0.5 shrink-0 text-destructive" size={20} />
           <div>
-            <h3 className="text-base font-semibold text-destructive sm:text-lg">THC & Cannabinoid Notice</h3>
+            <h3 className="text-base font-semibold text-destructive sm:text-lg">Anabolic Steroids (AAS) Notice</h3>
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground sm:text-base">
               {thcWarning ||
-                "THC and cannabinoid products are only available where legally permitted. Customers are responsible for verifying local laws before ordering. For adults 21+ only."}
+                "Anabolic androgenic steroids are subject to regional and national laws. Customers must verify local legality before ordering. For adults 18+ only. Never administer without direct medical supervision."}
             </p>
           </div>
         </div>

@@ -110,9 +110,9 @@ export async function sendWholesaleInquiryEmails(data: WholesaleInquiryInput, ma
 
   const from =
     process.env.RESEND_FROM_EMAIL?.trim() ||
-    "THCPensBulk <onboarding@resend.dev>";
+    "SteroidsSupplies <onboarding@resend.dev>";
   const notifyTo =
-    process.env.WHOLESALE_NOTIFY_EMAIL?.trim() || "sales@thcpensbulk.com";
+    process.env.WHOLESALE_NOTIFY_EMAIL?.trim() || "sales@steroidssupplies.co.uk";
 
   const resend = new Resend(apiKey);
   const orderItems = data.orderItems ?? [];
@@ -134,10 +134,10 @@ export async function sendWholesaleInquiryEmails(data: WholesaleInquiryInput, ma
   const buyerResult = await resend.emails.send({
     from,
     to: [data.email],
-    subject: "We received your wholesale inquiry — THCPensBulk",
+    subject: "We received your wholesale inquiry — SteroidsSupplies",
     html: `
       <p>Hi ${escapeHtml(data.contactName)},</p>
-      <p>Thanks for contacting THCPensBulk. Our wholesale team will review your inquiry and follow up with a proforma invoice within one business day.</p>
+      <p>Thanks for contacting SteroidsSupplies. Our wholesale team will review your inquiry and follow up with a proforma invoice within one business day.</p>
       ${orderItems.length > 0 ? orderInvoiceHtml(orderItems) : ""}
       <p><strong>Summary</strong></p>
       <ul>
@@ -145,7 +145,7 @@ export async function sendWholesaleInquiryEmails(data: WholesaleInquiryInput, ma
         <li>Interests: ${escapeHtml(formatInterests(data.productInterests, maps))}</li>
         <li>Estimated order: ${escapeHtml(orderValueLabel(data.estimatedOrderValue, maps))}</li>
       </ul>
-      <p>Approved wholesale accounts receive tier-based bulk pricing, COA documentation, and priority dispatch on all orders.</p>
+      <p>Approved wholesale accounts receive tier-based bulk pricing, COA documentation, and priority dispatch on all orders globally.</p>
     `,
   });
 

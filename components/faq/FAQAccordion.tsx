@@ -12,11 +12,11 @@ export type FaqCategory =
   | "Payment"
   | "Products"
   | "Compliance"
-  | "Nicotine"
-  | "CBD"
-  | "THC"
-  | "THCA"
-  | "THC Carts";
+  | "Injectables"
+  | "Orals"
+  | "PCT"
+  | "Steroids"
+  | "Wholesale";
 
 export type FaqAccordionItem = {
   id: string;
@@ -36,11 +36,11 @@ const CATEGORY_ORDER: FaqCategory[] = [
   "Payment",
   "Products",
   "Compliance",
-  "Nicotine",
-  "CBD",
-  "THC",
-  "THCA",
-  "THC Carts",
+  "Injectables",
+  "Orals",
+  "PCT",
+  "Steroids",
+  "Wholesale",
 ];
 
 export function FAQAccordion({ items }: FAQAccordionProps) {

@@ -16,48 +16,48 @@ export default function OGImage() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #0d2b18 0%, #1a6b3c 50%, #0a3d22 100%)',
+          background: 'linear-gradient(135deg, #09090b 0%, #1a0608 45%, #0c0407 100%)',
           padding: '60px',
           position: 'relative',
         }}
       >
-        {/* Teal accent circle top-right */}
+        {/* Crimson glow — top-right */}
         <div
           style={{
             position: 'absolute',
-            top: -80,
-            right: -80,
+            top: -100,
+            right: -100,
+            width: 380,
+            height: 380,
+            borderRadius: '50%',
+            background: 'radial-gradient(circle, rgba(196,30,58,0.28) 0%, transparent 70%)',
+          }}
+        />
+        {/* Deep red glow — bottom-left */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: -80,
+            left: -80,
             width: 320,
             height: 320,
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(13,148,136,0.3) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(127,29,29,0.22) 0%, transparent 70%)',
           }}
         />
-        {/* Amber accent bottom-left */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: -60,
-            left: -60,
-            width: 280,
-            height: 280,
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(217,119,6,0.25) 0%, transparent 70%)',
-          }}
-        />
-        {/* Amber badge */}
+        {/* Red badge */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            background: 'rgba(217,119,6,0.2)',
-            border: '1px solid rgba(245,158,11,0.5)',
+            background: 'rgba(196,30,58,0.18)',
+            border: '1px solid rgba(239,68,68,0.45)',
             borderRadius: 8,
             padding: '8px 20px',
             marginBottom: 32,
           }}
         >
-          <span style={{ color: '#f59e0b', fontSize: 18, fontWeight: 700, letterSpacing: 2 }}>
+          <span style={{ color: '#f87171', fontSize: 18, fontWeight: 700, letterSpacing: 2 }}>
             CERTIFIED GLOBAL PERFORMANCE SUPPLIER
           </span>
         </div>
@@ -86,7 +86,7 @@ export default function OGImage() {
             style={{
               fontSize: 72,
               fontWeight: 800,
-              color: '#ffffff',
+              color: '#c41e3a',
               letterSpacing: -1,
               textAlign: 'center',
               lineHeight: 1.1,
@@ -98,7 +98,7 @@ export default function OGImage() {
         {/* Subheading */}
         <div
           style={{
-            color: 'rgba(255,255,255,0.75)',
+            color: 'rgba(255,255,255,0.65)',
             fontSize: 26,
             marginTop: 28,
             textAlign: 'center',
@@ -121,10 +121,10 @@ export default function OGImage() {
               width: 8,
               height: 28,
               borderRadius: 4,
-              background: '#d97706',
+              background: '#c41e3a',
             }}
           />
-          <span style={{ color: '#d6e4da', fontSize: 22, fontWeight: 700, letterSpacing: 1 }}>
+          <span style={{ color: '#fafafa', fontSize: 22, fontWeight: 700, letterSpacing: 1 }}>
             steroidssupplies.co.uk
           </span>
         </div>

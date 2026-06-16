@@ -7,8 +7,8 @@ import { SEO_DEFAULTS, SITE_NAME } from '@/config/seo';
  *
  * @example
  * export const metadata: Metadata = generateMetadata({
- *   title: "Shop Bulk THC Vapes | THCPensBulk",
- *   description: "Browse our COA-verified bulk THC vape and 510 cart inventory...",
+ *   title: "Buy Anabolic Steroids Online | SteroidsSupplies",
+ *   description: "Browse our COA-verified anabolic steroids and performance compounds...",
  *   url: "https://example.com/products"
  * })
  */

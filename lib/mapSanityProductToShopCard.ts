@@ -11,7 +11,7 @@ export function mapSanityProductToShopCard(product: Product): ShopProductCardDat
   const firstVariantWithPuffs =
     product.variants?.find((variant) => typeof variant.puffCount === "number") || defaultVariant;
   const price = typeof firstVariant?.price === "number" ? firstVariant.price : 0;
-  const nicotinePercent =
+  const concentrationMg =
     typeof firstVariant?.nicotinePercent === "number"
       ? firstVariant.nicotinePercent
       : typeof product.nicotinePercent === "number"
@@ -37,18 +37,18 @@ export function mapSanityProductToShopCard(product: Product): ShopProductCardDat
   const categoryGroup =
     product.categoryGroup ||
     (categorySource && "group" in categorySource ? categorySource.group : undefined) ||
-    "Disposable Vapes";
+    "Injectable Steroids";
 
   const categoryName =
     categorySource && "name" in categorySource && typeof categorySource.name === "string"
       ? categorySource.name
       : "";
 
-  const productType = product.productType || "Disposable";
-  const displayType = product.productType || "Disposable";
+  const productType = product.productType || "Injectable";
+  const displayType = product.productType || "Injectable";
   const specParts = [
-    puffCount > 0 ? `${puffCount} puffs` : undefined,
-    typeof nicotinePercent === "number" ? `${nicotinePercent}mg THC` : undefined,
+    puffCount > 0 ? `${puffCount}ml` : undefined,
+    typeof concentrationMg === "number" ? `${concentrationMg}mg/ml` : undefined,
     displayType,
   ].filter(Boolean);
 

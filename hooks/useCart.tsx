@@ -10,7 +10,7 @@ import {
   type ReactNode,
 } from "react";
 
-const CART_STORAGE_KEY = "thcpensbulk-cart-v1";
+const CART_STORAGE_KEY = "steroidssupplies-cart-v1";
 
 export type CartItem = {
   id: string;

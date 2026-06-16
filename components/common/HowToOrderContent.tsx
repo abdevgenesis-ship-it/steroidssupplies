@@ -50,7 +50,7 @@ export function HowToOrderContent({
         {/* Connector line — runs through icon circle centres on desktop */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-[8%] top-[2.75rem] z-0 hidden h-px bg-[#1a6b3c]/20 lg:block sm:top-[3.125rem]"
+          className="pointer-events-none absolute inset-x-[8%] top-[2.75rem] z-0 hidden h-px bg-[#c41e3a]/20 lg:block sm:top-[3.125rem]"
         />
 
         <div className="relative z-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">

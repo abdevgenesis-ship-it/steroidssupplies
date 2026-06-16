@@ -10,18 +10,18 @@ import { brandFallbackGradient, purpleImageOverlay } from "@/lib/theme";
 import { getCategoriesForLanding } from "@/lib/sanityClient";
 
 export const metadata: Metadata = {
-  title: `THC Vape Categories & 510 Cartridges | ${SITE_NAME}`,
+  title: `Anabolic Steroids Categories | Injectable, Oral & PCT | ${SITE_NAME}`,
   description:
-    `Browse all bulk THC vape and 510 cartridge categories from ${SITE_NAME} and jump directly to category-specific inventory and wholesale inquiry paths.`,
+    `Browse all anabolic steroid categories from ${SITE_NAME}. Injectable steroids, oral tablets, and PCT supplements — jump directly to compound-specific inventory and wholesale inquiry paths.`,
   alternates: {
     canonical: `${SITE_URL}/categories`,
   },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/categories`,
-    title: `THC Vape Categories & 510 Cartridges | ${SITE_NAME}`,
+    title: `Anabolic Steroids Categories | Injectable, Oral & PCT | ${SITE_NAME}`,
     description:
-      `Browse all bulk THC vape and 510 cartridge categories from ${SITE_NAME} and jump directly to category-specific inventory and wholesale inquiry paths.`,
+      `Browse all anabolic steroid categories from ${SITE_NAME}. Injectable steroids, oral tablets, and PCT supplements — jump directly to compound-specific inventory and wholesale inquiry paths.`,
     siteName: SITE_NAME,
   },
 };

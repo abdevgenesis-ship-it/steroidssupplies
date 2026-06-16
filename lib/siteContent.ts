@@ -47,43 +47,43 @@ export type SiteContent = {
 
 const DEFAULT_CONTENT: SiteContent = {
   announcement: {
-    text: "Fast 48-hour tracked delivery across the USA, UK & Worldwide — priority same-day dispatch available.",
+    text: "Fast 48-hour tracked delivery across the UK, USA & Worldwide — priority same-day dispatch available.",
     href: "/shipping",
   },
   footer: {
     warningText:
-      "All products on THCPensBulk.com are intended strictly for distribution to licensed commercial business entities and adult consumers of legal age (21+). Not for sale to minors. Cannabinoids can affect blood pressure, heart rate, and intraocular pressure. Do not use if pregnant or nursing. Products may cause drowsiness; do not operate heavy machinery or motor vehicles after use.",
+      "All products on SteroidsSupplies.co.uk are strictly for adults 18 years of age or older. Anabolic androgenic steroids are potent hormonal compounds that profoundly alter human endocrinology. Do not use if pregnant or nursing. Never administer any compound without direct medical supervision from a licensed clinical professional. Keep all compounds out of reach of children and pets.",
     complianceText:
-      "THCPENSBULK operates as a B2B master distributor of hemp-derived vape hardware and legal cannabinoid products. All pre-filled products comply with the 2018 US Farm Bill (≤0.3% Delta-9 THC dry weight). Buyers are responsible for local compliance with all applicable federal, state, and local laws.",
+      "STEROIDSSUPPLIES operates as a global B2C and B2B wholesale distributor of performance compounds. All materials, descriptions, and content on this domain are strictly for educational, research, and informational purposes only. The purchase, import, and possession of AAS is subject to regional and national laws. Buyers are solely responsible for ensuring compliance with all applicable laws in their jurisdiction. We assume zero legal liability for cross-border items contrary to localised laws.",
   },
   homepage: {
-    badge: "THCPensBulk",
-    heading: "Bulk THC Vapes and Wholesale 510 Vape Carts for Global B2B Distribution",
+    badge: "SteroidsSupplies",
+    heading: "Buy Steroids Online from the Ultimate Global Performance Source",
     subheading:
-      "Buy Premium THC Disposable Vape Pens and Hardware at the Market's Best Wholesale Prices with Guaranteed 48-Hour Priority Shipping.",
-    nextStepTitle: "Shop Our Bulk Inventory",
+      "Order certified anabolic steroids for sale with institutional-grade quality control and guaranteed 48-hour priority international shipping.",
+    nextStepTitle: "Shop Our Performance Catalog",
     nextStepDescription:
-      "Browse bulk THC vapes, wholesale 510 carts, and hardware for B2B retailers and distributors across the USA, UK, and worldwide.",
+      "Browse Anavar, Trenbolone, injectable steroids, and oral compounds for retail and B2B wholesale buyers across the UK, USA, and worldwide.",
   },
   legal: {
-    supportEmail: "support@thcpensbulk.com",
+    supportEmail: "support@steroidssupplies.co.uk",
     pactActNotice:
-      "THCPensBulk.com operates in full compliance with the Prevent All Cigarette Trafficking (PACT) Act. All wholesale shipments travel via registered, compliant commercial freight carriers, are fully reported to state tax authorities where required, and require an adult signature (21+) upon arrival.",
+      "The purchase, import, and possession of anabolic androgenic steroids (AAS) are governed by distinct regional, domestic, and international laws that vary significantly from one country to another. It is the sole responsibility of the individual customer or wholesale purchaser to understand, evaluate, and adhere to the precise legal statutes, import restrictions, and prescription requirements enforced within their own country or local jurisdiction before initiating an order through our storefront. SteroidsSupplies assumes zero legal liability for cross-border customs items that run contrary to localised laws.",
     nicotineWarning:
-      "This product may contain nicotine. Nicotine is an addictive chemical. Not for sale to minors. 21+ age verification required.",
+      "For adults 18 years of age or older only. Keep all performance compounds out of reach of children and pets. Do not use if pregnant or nursing. Do not operate heavy machinery or motor vehicles after administration.",
     thcWarning:
-      "THC and cannabinoid alternative products are only available where legally permitted. All products comply with the 2018 US Farm Bill (≤0.3% Delta-9 THC dry weight). Customers are responsible for knowing and complying with local laws.",
+      "Anabolic androgenic steroids (AAS) are subject to regional and national laws. Customers must verify local legality before ordering. For adults 18+ only. Never administer any compound without direct medical supervision from a licensed clinical professional.",
     fdaDisclaimer:
-      "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.",
+      "All materials, chemical profiles, and descriptions hosted across this domain are intended strictly for educational, research, and informational contexts. They do not constitute professional medical advice, diagnosis, or treatment protocols. Never implement any compound without direct medical supervision from an independent, licensed clinical professional.",
     privacy: {
       title: "Privacy Policy",
       description:
-        "THCPensBulk Privacy Policy — How we collect, use, and protect your personal information.",
+        "SteroidsSupplies Privacy Policy — How we collect, use, and protect your personal information.",
       sections: [
         {
           title: "1. Introduction",
           paragraphs: [
-            "THCPensBulk (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
+            "SteroidsSupplies (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
           ],
         },
         {
@@ -106,7 +106,7 @@ const DEFAULT_CONTENT: SiteContent = {
             "Send transactional emails (order confirmations, shipment updates)",
             "Improve our website and services",
             "Respond to your inquiries and provide customer support",
-            "Comply with PACT Act and applicable laws and regulations",
+            "Comply with applicable laws and regulations",
           ],
         },
         {
@@ -130,13 +130,13 @@ const DEFAULT_CONTENT: SiteContent = {
         {
           title: "7. Your Rights",
           paragraphs: [
-            "You may request access to, correction of, or deletion of your personal information by contacting us at support@thcpensbulk.com.",
+            "You may request access to, correction of, or deletion of your personal information by contacting us at support@steroidssupplies.co.uk.",
           ],
         },
         {
           title: "8. Contact Us",
           paragraphs: [
-            "If you have questions about this Privacy Policy, please contact us at support@thcpensbulk.com.",
+            "If you have questions about this Privacy Policy, please contact us at support@steroidssupplies.co.uk.",
           ],
         },
       ],
@@ -144,43 +144,43 @@ const DEFAULT_CONTENT: SiteContent = {
     terms: {
       title: "Terms of Service",
       description:
-        "THCPensBulk Terms of Service — Read our complete terms and conditions for purchasing and using our site.",
+        "SteroidsSupplies Terms of Service — Read our complete terms and conditions for purchasing and using our site.",
       sections: [
         {
           title: "1. Acceptance of Terms",
           paragraphs: [
-            "By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement. This platform is for licensed B2B buyers only. If you do not agree to abide by the above, please do not use this service.",
+            "By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement. This platform is for adult retail consumers and licensed B2B buyers only. If you do not agree to abide by the above, please do not use this service.",
           ],
         },
         {
-          title: "2. Eligibility & Business Requirements",
+          title: "2. Eligibility & Age Requirements",
           paragraphs: [
-            "You must be a licensed commercial business entity and 21 years or older to purchase products from THCPensBulk. All accounts must pass business verification before orders are processed.",
+            "You must be 18 years of age or older to purchase products from SteroidsSupplies. By placing an order you confirm that you meet the minimum age requirement in your jurisdiction and that you are legally permitted to purchase such compounds.",
           ],
         },
         {
-          title: "3. Product Compliance",
+          title: "3. Jurisdictional Compliance",
           paragraphs: [
-            "All pre-filled products comply with the 2018 US Farm Bill (≤0.3% Delta-9 THC dry weight). Buyers are solely responsible for compliance with local, state, and federal laws in their jurisdiction.",
+            "The purchase, import, and possession of anabolic androgenic steroids (AAS) are governed by distinct regional, domestic, and international laws. Buyers are solely responsible for compliance with all applicable laws in their jurisdiction. SteroidsSupplies assumes zero legal liability for cross-border customs items contrary to localised laws.",
           ],
         },
         {
           title: "4. Ordering & Payment",
           paragraphs: [
-            "By placing an order, you warrant that you are a licensed business operator legally able to enter into binding contracts and that the information you provide is accurate. We reserve the right to refuse or cancel any order at our sole discretion.",
+            "By placing an order, you warrant that you are legally able to enter into binding contracts and that the information you provide is accurate. We reserve the right to refuse or cancel any order at our sole discretion.",
           ],
         },
         {
           title: "5. Shipping & Delivery",
           paragraphs: [
-            "Standard wholesale orders are dispatched with guaranteed 48-hour priority shipping. Same-day dispatch is available for qualifying high-volume orders placed before 12:00 PM local warehouse time.",
-            "All domestic US shipments comply with PACT Act requirements including adult signature on delivery (21+).",
+            "Standard orders are dispatched with guaranteed 48-hour priority shipping globally. Same-day dispatch is available for qualifying orders placed before 12:00 PM local warehouse time.",
+            "All packages are discrete, vacuum-sealed, and dispatched via tracked international courier with full insurance on every consignment.",
           ],
         },
         {
           title: "6. Limitation of Liability",
           paragraphs: [
-            "THCPensBulk is provided as-is without warranties of any kind. We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from the use or inability to use our website or products.",
+            "SteroidsSupplies is provided as-is without warranties of any kind. We are not liable for any indirect, incidental, special, consequential, or punitive damages resulting from the use or inability to use our website or products.",
           ],
         },
         {
@@ -192,7 +192,7 @@ const DEFAULT_CONTENT: SiteContent = {
         {
           title: "8. Contact & Disputes",
           paragraphs: [
-            "For any questions or disputes regarding these terms, please contact us at support@thcpensbulk.com.",
+            "For any questions or disputes regarding these terms, please contact us at support@steroidssupplies.co.uk.",
           ],
         },
       ],
@@ -200,12 +200,12 @@ const DEFAULT_CONTENT: SiteContent = {
     refunds: {
       title: "Refund Policy",
       description:
-        "THCPensBulk Refund Policy — Learn about our return, exchange, and refund procedures for B2B orders.",
+        "SteroidsSupplies Refund Policy — Learn about our return, exchange, and refund procedures.",
       sections: [
         {
           title: "Our Refund Policy",
           paragraphs: [
-            "At THCPensBulk, we stand behind the quality of our products. Please read our refund and return policy carefully before making a purchase.",
+            "At SteroidsSupplies, we stand behind the quality of our products. Please read our refund and return policy carefully before making a purchase.",
           ],
         },
         {
@@ -222,7 +222,7 @@ const DEFAULT_CONTENT: SiteContent = {
           title: "2. Non-Returnable Items",
           paragraphs: ["The following items cannot be returned or refunded:"],
           bullets: [
-            "Opened hardware or items with a broken seal",
+            "Opened items or items with a broken seal",
             "Clearance or final sale items",
             "Items purchased outside the 30-day return window",
             "Items without original packaging",
@@ -232,7 +232,7 @@ const DEFAULT_CONTENT: SiteContent = {
           title: "3. Return Process",
           paragraphs: ["To initiate a return:"],
           ordered: [
-            "Contact us at support@thcpensbulk.com with your order number",
+            "Contact us at support@steroidssupplies.co.uk with your order number",
             "Obtain a return authorization number (RMA)",
             "Ship the item back to us in original packaging",
             "Include your RMA number inside the package",
@@ -254,38 +254,40 @@ const DEFAULT_CONTENT: SiteContent = {
         {
           title: "6. Questions?",
           paragraphs: [
-            "For return inquiries, contact us at support@thcpensbulk.com.",
+            "For return inquiries, contact us at support@steroidssupplies.co.uk.",
           ],
         },
       ],
     },
     agePolicy: {
-      title: "Mandatory Commercial Safety Warning",
+      title: "Mandatory Medical Warning & Safety Notices",
       description:
-        "Read our mandatory public health warning, age verification requirements, and product safety guidelines for THC vape hardware.",
+        "Read the mandatory legal compliance documentation, jurisdictional guidelines, and chemical safety warnings for SteroidsSupplies.",
       sections: [
         {
           title: "Age Verification Requirement",
           paragraphs: [
-            "All products available on THCPensBulk.com are intended strictly for distribution to licensed commercial business entities and adult consumers of legal age (21+). They are not for sale to minors.",
+            "All products available on SteroidsSupplies.co.uk are strictly for adults 18 years of age or older. They are not for sale to minors. By accessing this site you confirm you meet the legal age requirement in your jurisdiction.",
           ],
         },
         {
-          title: "Health & Safety Warnings",
+          title: "⚠️ Mandatory Medical Warning",
           paragraphs: [
-            "Cannabinoids can affect blood pressure, heart rate, and intraocular pressure. Consult a physician before use if you have a serious medical condition or use prescription medications. Do not use these products if you are pregnant or nursing. Products may cause drowsiness; do not operate heavy machinery or motor vehicles after consumption.",
+            "Anabolic steroids are highly active, potent hormonal compounds that profoundly alter human endocrinology. Unsupervised, excessive, or unverified administration can result in severe and potentially permanent health complications.",
+            "These include cardiovascular strain, left ventricular hypertrophy, severe hepatic toxicity, profound suppression of the natural hypothalamic-pituitary-gonadal axis (HPGA), dyslipidemia, and psychiatric alterations.",
+            "All materials, chemical profiles, and descriptions hosted across this domain are intended strictly for educational, research, and informational contexts. They do not constitute professional medical advice, diagnosis, or treatment protocols. Never implement any compound without direct medical supervision from an independent, licensed clinical professional.",
           ],
         },
         {
-          title: "Legal Compliance",
+          title: "Jurisdictional Legal Compliance",
           paragraphs: [
-            "THCPensBulk does not sell pre-filled cannabis products containing over 0.3% Delta-9 THC to unauthorized regions. It is the sole responsibility of the wholesale buyer to ensure complete compliance with local county, state, or country regulations before placing a volume purchase order.",
+            "The purchase, import, and possession of anabolic androgenic steroids (AAS) are governed by distinct regional, domestic, and international laws that vary significantly from one country to another. It is the sole responsibility of the individual customer or wholesale purchaser to understand, evaluate, and adhere to the precise legal statutes, import restrictions, and prescription requirements enforced within their own country or local jurisdiction before initiating an order. SteroidsSupplies assumes zero legal liability for cross-border customs items contrary to localised laws.",
           ],
         },
         {
-          title: "PACT Act Compliance",
+          title: "Health & Safety Guidelines",
           paragraphs: [
-            "All domestic US shipments comply with the Prevent All Cigarette Trafficking (PACT) Act. Shipments require an adult signature (21+) upon arrival and travel via registered, compliant commercial freight carriers.",
+            "Do not use performance compounds if you are pregnant or nursing. Keep all compounds out of reach of children and pets. Do not operate heavy machinery or motor vehicles after administration. Consult a licensed physician before use if you have a serious medical condition or use prescription medications.",
           ],
         },
       ],

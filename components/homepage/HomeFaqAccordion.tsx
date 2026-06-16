@@ -17,30 +17,32 @@ type HomeFaq = {
 
 const fallbackFaqs: HomeFaq[] = [
   {
-    question: "Where can I buy bulk THC vapes at wholesale prices?",
+    question: "Where can I buy anabolic steroids online with guaranteed delivery?",
     answer:
-      "You can source **COA-verified bulk THC vapes** and wholesale 510 cartridges directly through **THCPensBulk**. We are a licensed B2B distributor supplying dispensaries and retailers with authentic inventory at competitive wholesale pricing.",
+      "You can buy **certified anabolic steroids online** safely right here at **SteroidsSupplies**. We provide an ironclad delivery guarantee on all orders, utilizing advanced routing and discrete packaging to ensure your package arrives within 48 hours globally.",
     ctaLabel: "Browse catalog",
     ctaHref: "/products",
   },
   {
-    question: "What is the minimum order quantity for wholesale THC vapes?",
+    question: "Are your anabolic steroids verified by laboratory testing?",
     answer:
-      "Our minimum order quantity is **50 units per SKU**. Volume price breaks apply from 200 units and 500+ units. Submit a wholesale inquiry and a dedicated account manager will respond within one business day.",
-    ctaLabel: "Request a quote",
-    ctaHref: "/wholesale",
+      "Yes. Every product undergoes strict third-party **HPLC analysis** guaranteeing absolute purity, correct ester weight, and zero bacterial contamination. **Certificate of Analysis (COA)** documentation is available on request prior to placing your order.",
+    ctaLabel: "Shop products",
+    ctaHref: "/products",
   },
   {
-    question: "Do your THC cartridges come with a Certificate of Analysis?",
+    question: "Do you offer same-day priority dispatch for international orders?",
     answer:
-      "Yes. Every SKU ships with a **Certificate of Analysis (COA)** from an accredited third-party lab, confirming cannabinoid potency and residual solvent levels. COA documentation is available on request prior to placing your order.",
-  },
-  {
-    question: "How fast will my wholesale order ship?",
-    answer:
-      "Orders confirmed before our daily cutoff are packaged and dispatched within **48 hours**. USA domestic orders ship via tracked courier with priority options available. International orders to the UK and worldwide ship fully tracked and insured.",
+      "Yes. Orders are picked, vacuum-sealed, and dispatched through our priority international express courier network — with **48-hour tracked delivery** globally as standard. Same-day dispatch is available for qualifying orders.",
     ctaLabel: "Shipping info",
     ctaHref: "/shipping",
+  },
+  {
+    question: "What wholesale pricing tiers are available?",
+    answer:
+      "Our system automatically applies **three progressive tiered discount levels** based on your total order volume. No separate wholesale registration required — the more you order, the lower your per-unit cost at checkout.",
+    ctaLabel: "Apply for wholesale",
+    ctaHref: "/wholesale",
   },
 ];
 

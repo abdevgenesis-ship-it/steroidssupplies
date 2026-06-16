@@ -27,24 +27,24 @@ type FaqJsonLdItem = {
 
 const fallbackFaqItems: FaqJsonLdItem[] = [
   {
-    question: "Where can I buy bulk THC vapes at wholesale prices?",
+    question: "Where can I buy anabolic steroids online with guaranteed delivery?",
     answer:
-      "You can source COA-verified bulk THC vapes and wholesale 510 cartridges directly through THCPensBulk. We are a licensed B2B distributor supplying dispensaries, smoke shops, and online cannabis retailers with authentic inventory, competitive wholesale pricing, and fast tracked delivery to the USA, UK and worldwide.",
+      "You can buy certified anabolic steroids online safely right here at SteroidsSupplies. We provide an ironclad delivery guarantee on all orders, utilizing advanced routing and discrete packaging to ensure your package arrives within 48 hours globally.",
   },
   {
-    question: "What is the minimum order quantity for wholesale THC vapes?",
+    question: "Are your anabolic steroids verified by laboratory testing?",
     answer:
-      "Our minimum order quantity is 50 units per SKU. Volume price breaks apply from 200 units and 500+ units. Submit a wholesale inquiry via our form and a dedicated account manager will provide a proforma invoice within one business day.",
+      "Yes. Every product listed across our Anavar, Trenbolone, and wholesale categories undergoes strict third-party HPLC analysis to guarantee absolute purity, correct ester weight, and zero bacterial contamination. COA documentation is available on request.",
   },
   {
-    question: "Do your THC cartridges come with a Certificate of Analysis?",
+    question: "Do you offer same-day priority dispatch for international orders?",
     answer:
-      "Yes. Every SKU in our catalog is shipped with a Certificate of Analysis (COA) from an accredited third-party lab, confirming cannabinoid potency and residual solvent levels. COA documentation is available on request prior to placing your order.",
+      "Yes. If you select our Same-Day Priority Delivery option at checkout, your order is picked, vacuum-sealed, and dispatched through our priority international express courier network within hours of order confirmation.",
   },
   {
-    question: "How fast will my wholesale order ship?",
+    question: "What is the minimum order for wholesale pricing?",
     answer:
-      "Wholesale orders confirmed before our daily cutoff are packaged and dispatched within 48 hours. USA domestic orders ship via tracked courier with priority options available. International wholesale shipments to the UK, Europe and beyond ship fully tracked and insured.",
+      "Volume discounts begin at our tier-two level. Adding bulk volumes of Anavar, Trenbolone, or mixed performance lines automatically reduces the individual unit price in real time at checkout — no separate wholesale account required.",
   },
 ];
 
@@ -130,11 +130,11 @@ export default async function Page() {
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     description:
-      "THCPensBulk is a licensed B2B wholesale distributor of bulk THC vapes and 510 cartridges, serving dispensaries and cannabis retailers worldwide with COA-verified inventory and fast tracked delivery.",
+      "SteroidsSupplies is a certified global B2C and B2B wholesale supplier of pharmaceutical-grade anabolic steroids, serving athletes and commercial buyers worldwide with COA-verified compounds and guaranteed 48h international delivery.",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
-      email: "sales@thcpensbulk.com",
+      email: "sales@steroidssupplies.co.uk",
     },
   };
 

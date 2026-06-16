@@ -8,7 +8,7 @@ const fallbackStoryBody: PortableTextBlock[] = [
     markDefs: [],
     children: [
       {
-        text: "The cannabis retail market moves at a pace that most regional supply chains can't match. When demand for new THC vape formats—disposables, live resin carts, THCA hardware—surges, dispensaries and smoke shops are left waiting weeks for back-ordered stock. THCPensBulk was founded to eliminate that bottleneck.",
+        text: "The performance compound market moves at a pace that most regional supply chains can't match. When demand for authenticated anabolic steroids surges, athletes and commercial buyers are left waiting weeks on unverified underground sources. SteroidsSupplies was founded to eliminate that bottleneck.",
       },
     ],
   },
@@ -61,7 +61,7 @@ const fallbackMissionBody: PortableTextBlock[] = [
     markDefs: [],
     children: [
       {
-        text: "Every batch of THC vapes and 510 cartridges we distribute is stored in domestic fulfillment centers equipped with advanced climate controls to preserve product integrity, guarantee shelf life, and maintain hardware quality standards.",
+        text: "Every batch of performance compounds we distribute is stored in dedicated fulfillment centers equipped with advanced climate controls to preserve compound integrity, guarantee shelf life, and maintain pharmaceutical-grade quality standards.",
       },
     ],
   },
@@ -108,12 +108,12 @@ const fallbackMissionBody: PortableTextBlock[] = [
 ];
 
 export const ABOUT_PAGE_FALLBACK = {
-  seoTitle: "About THCPensBulk — Licensed B2B THC Vape Wholesale Distributor",
+  seoTitle: "About SteroidsSupplies — Certified Global Performance Compound Supplier",
   seoDescription:
-    "Learn how THCPensBulk became a trusted B2B wholesale distributor of bulk THC vapes and 510 cartridges for dispensaries and retailers across the USA, UK and worldwide.",
-  pageHeading: "About THCPensBulk: Building a Better THC Vape Supply Chain",
+    "Learn how SteroidsSupplies became a trusted B2C and B2B wholesale supplier of certified anabolic steroids for athletes and commercial buyers across the UK, USA, and worldwide.",
+  pageHeading: "About SteroidsSupplies: Building a Better Performance Supply Chain",
   introLead:
-    "COA-Verified THC Vape Inventory, Wholesale Pricing, and Fast Global Delivery for Cannabis Retailers and Dispensaries",
+    "COA-Verified Anabolic Steroids, Wholesale Pricing, and Guaranteed 48H Global Delivery for Athletes and Commercial Buyers",
   storyHeading: "Our Foundational Mission",
   storyBody: fallbackStoryBody,
   missionHeading: "What Sets Our Distribution Infrastructure Apart",

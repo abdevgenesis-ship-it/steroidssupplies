@@ -118,7 +118,7 @@ export function getSupportingExactKeyword(page: {
   }
 
   const fromSlug = normalizeKeyword(page.slug?.current).replace(/-/g, " ");
-  return fromSlug || "bulk thc vapes";
+  return fromSlug || "anabolic steroids";
 }
 
 export function ensureKeywordPrefix(keyword: string, value: string, separator = " - ") {

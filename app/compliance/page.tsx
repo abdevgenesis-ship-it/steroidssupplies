@@ -10,35 +10,35 @@ import { getSiteContent, type LegalSection } from "@/lib/siteContent";
 const COMPLIANCE_FALLBACK = {
   title: "Legality, Compliance, and Distribution Policies",
   description:
-    "Review the regulatory framework, age verification requirements, and compliance standards governing THCPensBulk's B2B wholesale distribution of THC vape products.",
+    "Review the mandatory legal compliance documentation, jurisdictional guidelines, and chemical safety warnings governing SteroidsSupplies' global distribution of performance compounds.",
   sections: [
     {
       title: "Overview of Our Compliance Operations",
       paragraphs: [
-        "Operating a transparent and legally sound supply pipeline is foundational to THCPensBulk. As a licensed B2B wholesale distributor of THC vape hardware and cartridges, our compliance department continuously audits inventory against federal, state, and destination-market legal standards.",
-        "We take full responsibility for ensuring that all products distributed from our facilities are sold only to licensed retailers, dispensaries, and qualified wholesale buyers in jurisdictions where such products are legally permitted.",
+        "Operating a transparent and legally sound supply pipeline is foundational to SteroidsSupplies. As a global supplier of performance compounds, our compliance department continuously audits inventory against destination-market legal standards.",
+        "We take full responsibility for ensuring that all products distributed from our facilities comply with applicable quality and safety standards. Buyers are solely responsible for compliance with local and national laws in their jurisdiction.",
       ],
     },
     {
       title: "1. Age Verification & Buyer Qualification",
       paragraphs: [
-        "All wholesale accounts are subject to business verification and must confirm that they operate in a jurisdiction where the sale and distribution of THC products is legally permitted. THCPensBulk does not sell to individuals under 21 years of age, nor to unlicensed retailers.",
+        "All buyers must confirm they are 18 years of age or older and that they operate in a jurisdiction where the purchase of anabolic steroids is legally permitted. SteroidsSupplies does not sell to individuals under 18 years of age.",
       ],
     },
     {
-      title: "2. PACT Act & Interstate Commerce Compliance",
+      title: "2. Jurisdictional Compliance",
       paragraphs: [
-        "THCPensBulk complies with applicable provisions of the Prevent All Cigarette Trafficking (PACT) Act and related federal and state regulations governing the interstate shipment of vape and THC products.",
-        "**Important Buyer Responsibility:** Buyers are solely responsible for ensuring that products purchased from THCPensBulk may be lawfully received and resold in their jurisdiction. State and local laws governing THC product distribution vary significantly. THCPensBulk does not provide legal advice and recommends all buyers consult qualified legal counsel prior to placing wholesale orders.",
+        "The purchase, import, and possession of anabolic androgenic steroids (AAS) are governed by distinct regional, domestic, and international laws that vary significantly from one country to another. SteroidsSupplies assumes zero legal liability for cross-border customs items contrary to localised laws.",
+        "**Important Buyer Responsibility:** Buyers are solely responsible for ensuring that products purchased from SteroidsSupplies may be lawfully received in their jurisdiction. We do not provide legal advice and recommend all buyers consult qualified legal counsel prior to placing orders.",
       ],
     },
     {
       title: "3. COA Verification & Quality Assurance",
       paragraphs: ["Every product in our catalog is supported by a Certificate of Analysis (COA) from an accredited third-party laboratory. Our QA process includes:"],
       bullets: [
-        "Verification of cannabinoid potency (THC, CBD, and minor cannabinoids) against labeled specifications.",
-        "Residual solvent testing to confirm compliance with safety thresholds.",
-        "Batch number reconciliation between manufacturer documentation and COA records.",
+        "HPLC verification of active compound potency and correct ester weight against labeled specifications.",
+        "Heavy metals, residual solvent, and bacterial contamination testing to confirm pharmaceutical safety thresholds.",
+        "Batch number reconciliation between manufacturing documentation and independent COA records.",
       ],
     },
   ],

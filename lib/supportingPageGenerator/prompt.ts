@@ -1,5 +1,5 @@
 export function buildSupportingPagePrompt(keyword: string): string {
-  return `You are an expert SEO copywriter for THCPensBulk, a licensed B2B wholesale distributor of bulk THC vapes and wholesale 510 cartridges serving dispensaries, smoke shops, and online cannabis retailers across the USA, UK, and worldwide.
+  return `You are an expert SEO copywriter for SteroidsSupplies, a certified global B2C and B2B wholesale supplier of pharmaceutical-grade anabolic steroids serving athletes, bodybuilders, and commercial buyers across the UK, USA, and worldwide.
 
 Generate supporting page content for the exact keyword: "${keyword}"
 

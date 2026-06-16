@@ -79,22 +79,22 @@ export function ProductInfoTabs({ productName, descriptionBlocks, variants = [],
       const min = Math.min(...puffCounts);
       const max = Math.max(...puffCounts);
       rows.push({
-        label: "Puff Count",
-        value: min === max ? `${min.toLocaleString()} puffs` : `${min.toLocaleString()}-${max.toLocaleString()} puffs`,
+        label: "Volume",
+        value: min === max ? `${min.toLocaleString()}ml` : `${min.toLocaleString()}-${max.toLocaleString()}ml`,
       });
     }
 
-    const thcStrengths = Array.from(
+    const concentrations = Array.from(
       new Set(
         variants
           .map((variant) => variant.nicotinePercent)
           .filter((value): value is number => typeof value === "number" && Number.isFinite(value)),
       ),
     );
-    if (thcStrengths.length > 0) {
+    if (concentrations.length > 0) {
       rows.push({
-        label: "THC Potency",
-        value: thcStrengths.map((value) => `${value}mg`).join(", "),
+        label: "Concentration",
+        value: concentrations.map((value) => `${value}mg/ml`).join(", "),
       });
     }
 

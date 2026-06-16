@@ -18,7 +18,7 @@ export function ComplianceBanner({
   return (
     <div className="w-full border-section-t bg-card">
       <Container className="py-5 sm:py-6">
-        {/* PACT Act Notice */}
+        {/* Regulatory Notice */}
         <div className="mb-4 flex items-start gap-3 sm:mb-6 sm:gap-4">
           <AlertCircle className="mt-1 shrink-0 text-destructive" size={18} />
           <div>
@@ -27,12 +27,12 @@ export function ComplianceBanner({
             </h3>
             <p className="mt-1 text-xs leading-relaxed text-muted-foreground sm:text-sm">
               {pactActNotice ||
-                "THCPensBulk is a licensed B2B wholesale distributor operating in compliance with applicable federal and state regulations. All THC products are sold lawfully only where permitted. Buyers are solely responsible for ensuring legal compliance in their jurisdiction."}
+                "SteroidsSupplies is a global B2C and B2B wholesale supplier of performance compounds. The purchase, import, and possession of AAS is governed by regional and national laws. Buyers are solely responsible for ensuring legal compliance in their jurisdiction."}
             </p>
           </div>
         </div>
 
-        {/* Nicotine Warning */}
+        {/* Safety & AAS Warning */}
         <div className="flex items-start gap-3 sm:gap-4">
           <Package className="mt-1 shrink-0 text-accent-foreground" size={18} />
           <div>
@@ -43,12 +43,12 @@ export function ComplianceBanner({
               <li>
                 <strong>Age Restriction:</strong>{" "}
                 {nicotineWarning ||
-                  "For adults 21 years of age or older only. Keep all THC products out of reach of children and pets. Do not use while pregnant, nursing, or operating heavy machinery."}
+                  "For adults 18 years of age or older only. Keep all performance compounds out of reach of children and pets. Do not use while pregnant, nursing, or operating heavy machinery."}
               </li>
               <li>
-                <strong>THC & Cannabinoid Products:</strong>{" "}
+                <strong>Anabolic Steroids (AAS):</strong>{" "}
                 {thcWarning ||
-                  "THC and cannabinoid products are subject to federal, state, and destination-market regulations. Customers must verify local legality before ordering. For adults 21+ only."}
+                  "Anabolic androgenic steroids are subject to regional and national laws. Customers must verify local legality before ordering. For adults 18+ only. Never administer without medical supervision."}
               </li>
               <li>
                 <strong>Health Disclaimer:</strong>{" "}

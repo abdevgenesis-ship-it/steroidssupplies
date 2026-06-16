@@ -23,11 +23,11 @@ export async function sendContactEmails(data: ContactEmailPayload) {
 
   const from =
     process.env.RESEND_FROM_EMAIL?.trim() ||
-    "THCPensBulk <onboarding@resend.dev>";
+    "SteroidsSupplies <onboarding@resend.dev>";
   const notifyTo =
     process.env.CONTACT_NOTIFY_EMAIL?.trim() ||
     process.env.WHOLESALE_NOTIFY_EMAIL?.trim() ||
-    "support@thcpensbulk.com";
+    "support@steroidssupplies.co.uk";
 
   const resend = new Resend(apiKey);
 
@@ -56,12 +56,12 @@ export async function sendContactEmails(data: ContactEmailPayload) {
   const buyerResult = await resend.emails.send({
     from,
     to: [data.email],
-    subject: "We received your message — THCPensBulk",
+    subject: "We received your message — SteroidsSupplies",
     html: `
       <p>Hi ${escapeHtml(data.name)},</p>
-      <p>Thanks for contacting THCPensBulk. Our team will review your message and respond as soon as possible.</p>
+      <p>Thanks for contacting SteroidsSupplies. Our team will review your message and respond as soon as possible.</p>
       <p><strong>Your subject:</strong> ${escapeHtml(data.subjectLabel)}</p>
-      <p>THCPensBulk is a licensed B2B wholesale distributor. All products are sold for lawful use only and in compliance with applicable regulations.</p>
+      <p>SteroidsSupplies is a global B2C and B2B wholesale supplier of performance compounds. All products are sold for lawful use only and in compliance with applicable laws in the buyer's jurisdiction.</p>
     `,
   });
 

@@ -127,7 +127,7 @@ function ensureMinimumWordCount(content: GeneratedSupportingPageContent): void {
 
   const targets = ensureNormalSection(content);
   const expansion =
-    "Our wholesale program supports smoke shops and retailers with bulk order options, competitive pricing, reliable stock, and fast USA shipping for qualified business buyers.";
+    "Our wholesale program supports gym networks and distributors with bulk compound options, competitive tiered pricing, HPLC-verified stock, and guaranteed 48h international shipping for qualified buyers.";
 
   let guard = 0;
   while (words < MIN_WORD_COUNT && guard < 5) {

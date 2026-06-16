@@ -27,11 +27,11 @@ function getShippingEstimate(regionCode: string) {
 }
 
 function getComplianceNote(categoryGroup?: string, regionCode?: string) {
-  if (categoryGroup === "THC" || categoryGroup === "THCA") {
-    return `Verify local legality for ${categoryGroup.toLowerCase()} products before ordering into ${regionCode || "this market"}.`;
+  if (categoryGroup === "Injectable Steroids" || categoryGroup === "Oral Steroids") {
+    return `Verify local import laws and prescription requirements for ${categoryGroup.toLowerCase()} before ordering into ${regionCode || "this market"}.`;
   }
 
-  return `All orders remain subject to age verification (21+) and destination regulations for ${regionCode || "this market"}. THC products are only sold where legally permitted — verify local compliance before ordering.`;
+  return `All orders remain subject to age verification (18+) and destination regulations for ${regionCode || "this market"}. AAS are only sold where legally permitted — verify local compliance before ordering.`;
 }
 
 function blocksToParagraphs(value: unknown) {
@@ -90,7 +90,7 @@ export function ProgrammaticPageTemplate({ page, currentHref, products, categori
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: SITE_NAME,
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://thcpensbulk.com"}${currentHref}`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://steroidssupplies.co.uk"}${currentHref}`,
     areaServed: locationLabel,
     description: page.seoDescription || `Wholesale ${categoryLabel.toLowerCase()} in ${locationLabel}.`,
   };

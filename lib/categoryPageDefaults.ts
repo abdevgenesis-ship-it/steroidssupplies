@@ -121,7 +121,7 @@ export function resolveCategoryPageContent(category: Category): ResolvedCategory
       heading: category.categoryBestsellersHeading?.trim() || "Bestsellers",
       description:
         category.categoryBestsellersDescription?.trim() ||
-        "Browse high-performing THC vapes trusted by dispensaries, smoke shops, and repeat wholesale buyers.",
+        "Browse high-performing compounds trusted by athletes, gym networks, and repeat wholesale buyers.",
       viewAllLabel: category.categoryBestsellersViewAllLabel?.trim() || "View All Products",
     },
     browseAllLabel: category.categoryBrowseAllLabel?.trim() || "Browse All Products",

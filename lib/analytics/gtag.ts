@@ -13,7 +13,7 @@ function gtagEvent(name: string, params?: Record<string, unknown>): void {
   window.gtag?.("event", name, params);
 }
 
-const FORM_EVENT_SCOPE = "thcpensbulk";
+const FORM_EVENT_SCOPE = "steroidssupplies";
 
 export function trackFormStart(formId: string): void {
   gtagEvent("form_start", {

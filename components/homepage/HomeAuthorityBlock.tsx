@@ -20,7 +20,7 @@ import {
 
 const authoritySecondaryImage = {
   src: "/images/authority_retail_thc.png",
-  alt: "THCPensBulk — gloved hand holding a 510 THC cartridge backlit to show premium amber oil quality",
+  alt: "SteroidsSupplies — pharmaceutical-grade anabolic steroids with COA verification documentation",
 } as const;
 
 const authorityIconByKey: Record<string, LucideIcon> = {
@@ -84,7 +84,7 @@ function AuthorityFeatureCard({ icon: Icon, title, children, className }: Author
   return (
     <li
       className={cn(
-        "rounded-2xl border border-border/70 bg-white p-4 shadow-[0_1px_2px_rgb(26_107_60/0.05)] transition-shadow duration-200 hover:shadow-[0_4px_14px_rgb(26_107_60/0.08)] sm:p-5",
+        "rounded-2xl border border-border/70 bg-card p-4 shadow-[0_1px_2px_rgb(196_30_58/0.06)] transition-shadow duration-200 hover:shadow-[0_4px_14px_rgb(196_30_58/0.12)] sm:p-5",
         className,
       )}
     >
@@ -241,7 +241,7 @@ export function HomeAuthorityBlock({
                   sizes="(min-width: 1024px) 46vw, 100vw"
                   priority={false}
                 />
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgb(255_255_255/0.08)_0%,rgb(26_107_60/0.18)_100%)]" />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgb(0_0_0/0.08)_0%,rgb(196_30_58/0.22)_100%)]" />
               </div>
             </div>
             <div className="glass-surface relative overflow-hidden rounded-3xl border-primary/25 ring-1 ring-inset ring-border/50">
@@ -254,7 +254,7 @@ export function HomeAuthorityBlock({
                   sizes="(min-width: 1024px) 46vw, 100vw"
                   priority={false}
                 />
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgb(255_255_255/0.08)_0%,rgb(26_107_60/0.18)_100%)]" />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgb(0_0_0/0.08)_0%,rgb(196_30_58/0.22)_100%)]" />
               </div>
             </div>
           </div>

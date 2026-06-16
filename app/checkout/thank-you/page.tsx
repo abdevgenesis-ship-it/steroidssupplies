@@ -41,9 +41,9 @@ export default async function CheckoutThankYouPage() {
                 Reply to your confirmation email or contact us at{" "}
                 <a
                   className="underline-offset-4 hover:underline"
-                  href="mailto:support@thcpensbulk.com"
+                  href="mailto:support@steroidssupplies.co.uk"
                 >
-                  support@thcpensbulk.com
+                  support@steroidssupplies.co.uk
                 </a>
                 .
               </p>

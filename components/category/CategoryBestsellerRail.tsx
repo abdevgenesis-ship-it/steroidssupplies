@@ -26,7 +26,7 @@ function toCard(product: Product): CategoryBestsellerCard {
   const imageSource = product.images?.[0];
   const imageUrl = imageSource?.asset
     ? urlFor(imageSource).width(480).height(480).fit("crop").url()
-    : "/images/categories/bulk-thc-vapes.png";
+    : "/images/authority_scene.png";
 
   return {
     title: product.name,

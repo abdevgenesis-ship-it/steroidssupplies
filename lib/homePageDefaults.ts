@@ -11,17 +11,17 @@ export const HOME_AUTHORITY_INTRO_H2_MARKER = "\n\n[[H2]]\n\n";
 export const HOME_AUTHORITY_INTRO_OUTRO_MARKER = "\n\n[[OUTRO]]\n\n";
 
 const DEFAULT_SEO = {
-  title: "Bulk THC Vapes & Wholesale 510 Carts | THCPensBulk",
+  title: "Buy Steroids Online | Premium Anabolic Steroids For Sale UK & Global",
   description:
-    "Licensed B2B distributor of bulk THC vapes and wholesale 510 cartridges. Fast USA & worldwide delivery, COA-verified stock, minimum 50 units. Request a wholesale quote today.",
+    "Looking to buy steroids online with guaranteed delivery? Steroids Supplies delivers certified anabolic steroids for sale. Order premium gear with lightning-fast 48h international shipping and secure checkout today.",
   keywords: [
-    "bulk thc vapes",
-    "wholesale 510 carts",
-    "thc vape wholesale",
-    "510 cartridge bulk",
-    "thc pens bulk",
-    "disposable thc vapes wholesale",
-    "thc cartridge distributor",
+    "buy steroids online",
+    "anabolic steroids for sale",
+    "steroids uk",
+    "buy anavar online",
+    "buy trenbolone online",
+    "anabolic steroids wholesale",
+    "buy steroids online uk",
   ],
 };
 
@@ -140,41 +140,41 @@ export type ResolvedHomePageContent = {
 };
 
 const DEFAULT_HERO: ResolvedHomeHero = {
-  badge: "THCPensBulk",
-  heading: "Bulk THC Vapes and Wholesale 510 Vape Carts — Licensed B2B Distributor",
+  badge: "SteroidsSupplies",
+  heading: "Buy Steroids Online from the Ultimate Global Performance Source",
   subheading:
-    "COA-Verified THC Disposables & 510 Cartridges at Wholesale Prices. Fast 48-Hour Tracked Delivery Across the USA, UK & Worldwide.",
-  primaryCtaLabel: "Browse Products",
+    "Order certified anabolic steroids for sale with institutional-grade quality control and guaranteed 48-hour priority international shipping.",
+  primaryCtaLabel: "Shop Anabolic Steroids",
   primaryCtaHref: "/products",
-  secondaryCtaLabel: "Request a Quote",
+  secondaryCtaLabel: "Apply for Wholesale",
   secondaryCtaHref: "/wholesale",
 };
 
 const DEFAULT_TRUST: ResolvedTrustStripItem[] = [
-  { title: "Fast USA & Worldwide Delivery", accent: "cyan", iconKey: "truck" },
-  { title: "COA-Verified Authentic Stock", accent: "purple", iconKey: "badgeCheck" },
-  { title: "Licensed B2B Distributor", accent: "cyan", iconKey: "shieldCheck" },
-  { title: "50-Unit Minimum Orders", accent: "purple", iconKey: "calendarCheck2" },
-  { title: "Dedicated Wholesale Support", accent: "cyan", iconKey: "headset" },
+  { title: "Pharmaceutical-Grade Quality", accent: "cyan", iconKey: "badgeCheck" },
+  { title: "Guaranteed 48H International Delivery", accent: "purple", iconKey: "truck" },
+  { title: "COA-Verified Every Batch", accent: "cyan", iconKey: "shieldCheck" },
+  { title: "B2C & B2B Wholesale Supply", accent: "purple", iconKey: "calendarCheck2" },
+  { title: "24/7 Priority Support", accent: "cyan", iconKey: "headset" },
 ];
 
 const DEFAULT_AUTHORITY: ResolvedAuthorityPoint[] = [
   {
-    title: "COA-Verified Inventory",
+    title: "Institutional Quality Control",
     description:
-      "Every batch of **bulk THC vapes** and **wholesale 510 cartridges** in our catalog ships with a Certificate of Analysis. Retailers and dispensaries can order with confidence knowing our stock meets potency and purity standards.",
+      "Every compound is verified for exact dosing and zero heavy metals via strict third-party **HPLC analysis** — guaranteeing absolute purity, correct ester weight, and zero bacterial contamination. The same standard elite athletes and research institutions demand.",
     iconKey: "badgeCheck",
   },
   {
     title: "Competitive Wholesale Pricing",
     description:
-      "Our **THC vape wholesale** pricing tiers are built for businesses—the more you order, the lower your per-unit cost. Volume discounts apply from 50 units, with deeper breaks at 200 and 500+ units.",
+      "Our **anabolic steroids wholesale** pricing tiers are built for commercial scale. The more you order, the lower your per-unit cost. Volume discounts apply from 50 units, with deeper breaks at 200 and 500+ units — true factory-direct margins.",
     iconKey: "walletCards",
   },
   {
-    title: "Broad Product Range",
+    title: "Unrivaled Global Logistics",
     description:
-      "From **disposable THC vape pens** to **510-thread cartridges** and hardware batteries, we carry the full lineup your customers demand. New SKUs added monthly from vetted extract labs.",
+      "Every package is discrete, **vacuum-sealed**, and backed by a 100% customs clearance guarantee. Our international logistics network converts standard shipping bottlenecks into a seamless 48-hour delivery reality to the UK, USA, Europe, and worldwide.",
     iconKey: "shieldCheck",
   },
 ];
@@ -182,22 +182,22 @@ const DEFAULT_AUTHORITY: ResolvedAuthorityPoint[] = [
 const DEFAULT_HOW_TO: ResolvedHowToStep[] = [
   {
     title: "Browse the Catalog",
-    description: "Explore bulk THC disposables and 510 cartridges by strain, potency, and format.",
+    description: "Explore Anavar, Trenbolone, injectables, and oral compounds by compound type, dosage, and format.",
     iconKey: "search",
   },
   {
-    title: "Request a Quote",
-    description: "Submit your SKU and quantity requirements through our wholesale inquiry form.",
+    title: "Submit Your Order",
+    description: "Add products to cart or submit a wholesale inquiry for high-volume commercial procurement.",
     iconKey: "send",
   },
   {
-    title: "Order Confirmed",
-    description: "Receive a proforma invoice with COA documentation within one business day.",
+    title: "Invoice & Payment",
+    description: "Receive a proforma invoice. Pay securely via crypto (10% off), Revolut (5% off), or bank transfer.",
     iconKey: "mail",
   },
   {
-    title: "Fast Tracked Delivery",
-    description: "Discreet, tracked shipments dispatched within 48 hours to USA, UK and worldwide.",
+    title: "Priority Dispatch",
+    description: "Orders dispatched within 48 hours globally — fully discrete vacuum-sealed packaging with tracking.",
     iconKey: "packageCheck",
   },
 ];
@@ -279,45 +279,45 @@ export function resolveHomePageContent(home: HomePage | null): ResolvedHomePageC
     },
     trustStrip,
     categories: {
-      eyebrow: home?.categoriesEyebrow?.trim() || "Shop By Product Type",
+      eyebrow: home?.categoriesEyebrow?.trim() || "Shop By Compound Type",
       heading: home?.categoriesHeading?.trim() || "Shop by Category",
       description:
         home?.categoriesDescription?.trim() ||
-        "Explore our full range of bulk THC disposables and wholesale 510 cartridges, available in multiple strains and potencies.",
+        "Explore our full range of certified anabolic steroids — oral and injectable compounds available in multiple dosages and formats.",
       emptyMessage: home?.categoriesEmptyMessage?.trim() || "No homepage categories configured yet.",
     },
     authority: {
-      eyebrow: home?.authorityEyebrow?.trim() || "Licensed B2B THC Vape Distributor",
+      eyebrow: home?.authorityEyebrow?.trim() || "Certified Global Performance Supplier",
       heading:
         home?.authorityHeading?.trim() ||
-        "Bulk THC Vapes for Sale: Wholesale 510 Carts & Disposables for Retailers",
+        "Premium Anabolic Steroids for Sale with Guaranteed Delivery",
       intro:
         home?.authorityIntro?.trim() ||
         (() => {
           const lead =
-            "**Bulk THC vapes** are one of the fastest-growing product categories in licensed cannabis retail, and at THCPensBulk we make it straightforward for dispensaries, smoke shops, and online retailers to source authentic, COA-verified inventory at true wholesale prices. As a dedicated B2B distributor, we stock a curated range of **disposable THC vape pens** and **wholesale 510 cartridges** from vetted extract labs, with a minimum order of just 50 units and volume price breaks that scale with your business.";
+            "When you choose to **buy anabolic steroids online** from SteroidsSupplies, you are bypassing underground black-market guesswork and tapping directly into an institutional-grade supply chain. We specialize in bringing the highest purity **anabolic steroids for sale** straight to elite athletes, bodybuilders, and wholesale buyers across the UK, USA, and worldwide. Every single batch is third-party tested, ensuring that when you order through our encrypted platform, you receive unmatched potency at the best prices on the market.";
           const tail = [
-            "For retailers sourcing **THC vape wholesale**, product authenticity and documentation are non-negotiable. Every SKU in our catalog ships with a Certificate of Analysis (COA) from an accredited third-party lab, verifying potency and residual solvents. Our supply chain is direct-from-lab, meaning you receive the same verified product your customers expect to see on licensed shelves.",
-            "For wholesale partners who need to move volume, we offer tiered pricing, flexible payment options including crypto discounts, and a dedicated account manager. Whether you operate a single storefront or manage a multi-location distribution network, our infrastructure is built to keep your supply chain uninterrupted.",
-            "Our catalog spans the most in-demand formats your customers are looking for:",
+            "To safely buy steroids online, athletes must look beyond flash marketing and prioritize rigorous laboratory verification. Our retail e-commerce storefront and wholesale distribution channels are meticulously structured to provide an ultra-secure environment to **purchase anabolic steroids**. Whether you are looking for oral anabolic steroids to kickstart a lean bulk or injectable anabolic steroids for an advanced contest prep stack, our catalogue contains only the top anabolic steroids on the market.",
+            "We cut out the middlemen to offer **steroids online** and global shipments at deep factory-direct discounts. Don't risk your health or money on unverified underground labs — purchase from a verified global supplier that guarantees your gear arrives safely.",
+            "Our catalog spans the most in-demand compounds your cycle demands:",
           ].join("\n\n");
           const outro = [
-            "**Fast Tracked Shipping Across the USA, UK & Worldwide**",
-            "We understand that stockouts cost you sales. Our fulfillment network is engineered for speed: orders confirmed before our daily cutoff are packaged and handed to shipping partners within hours, with 48-hour tracked delivery as standard.",
-            "Domestic USA shipments qualify for priority dispatch. International wholesale orders to the UK, Europe, and worldwide ship via tracked courier with full insurance on every consignment.",
+            "**Fast Tracked Shipping Across the UK, USA & Worldwide**",
+            "We understand that supply consistency is critical. Our fulfillment network is engineered for speed: orders confirmed before our daily cutoff are packaged and handed to shipping partners within hours, with 48-hour tracked delivery as standard.",
+            "International wholesale orders to the UK, Europe, and worldwide ship via tracked courier with full insurance on every consignment and our 100% customs clearance guarantee.",
           ].join("\n\n");
           return `${lead}${HOME_AUTHORITY_INTRO_H2_MARKER}${tail}${HOME_AUTHORITY_INTRO_OUTRO_MARKER}${outro}`;
         })(),
       points: authorityPoints,
-      ctaLabel: home?.authorityCtaLabel?.trim() || "Open wholesale catalog",
+      ctaLabel: home?.authorityCtaLabel?.trim() || "Open performance catalog",
       ctaHref: home?.authorityCtaHref?.trim() || "/products",
       imageAlt:
         home?.authorityImageAlt?.trim() ||
-        "THCPensBulk warehouse — COA-verified bulk THC vapes and 510 cartridges ready for dispatch",
+        "SteroidsSupplies — COA-verified anabolic steroids and performance compounds ready for dispatch",
     },
     crypto: {
       eyebrow: home?.cryptoEyebrow?.trim() || "Payment Incentives",
-      heading: home?.cryptoHeading?.trim() || "Pay with Crypto - Get 10% Off Instantly",
+      heading: home?.cryptoHeading?.trim() || "Pay with Crypto — Get 10% Off Instantly",
       description:
         home?.cryptoDescription?.trim() ||
         "We accept BTC, ETH, and USDT for a 10% discount on qualified orders. Prefer Revolut? Receive 5% off with fast invoice turnaround.",
@@ -326,10 +326,10 @@ export function resolveHomePageContent(home: HomePage | null): ResolvedHomePageC
     },
     delivery: {
       eyebrow: home?.deliveryEyebrow?.trim() || "Rapid Fulfilment",
-      heading: home?.deliveryHeading?.trim() || "Fast Tracked Delivery — USA, UK & Worldwide",
+      heading: home?.deliveryHeading?.trim() || "Fast Tracked Delivery — UK, USA & Worldwide",
       description:
         home?.deliveryDescription?.trim() ||
-        "Place your wholesale order before our daily cutoff and your shipment is packaged and handed to our shipping partners within hours, with priority dispatch available for commercial buyers.",
+        "Place your order before our daily cutoff and your shipment is packaged and handed to our shipping partners within hours. Discrete vacuum-sealed packaging with priority international dispatch available.",
       ctaLabel: home?.deliveryCtaLabel?.trim() || "Shipping & Delivery",
       ctaHref: home?.deliveryCtaHref?.trim() || "/shipping",
     },
@@ -343,10 +343,10 @@ export function resolveHomePageContent(home: HomePage | null): ResolvedHomePageC
     },
     wholesaleMid: {
       eyebrow: home?.wholesaleMidEyebrow?.trim() || "Wholesale Partners",
-      heading: home?.wholesaleMidHeading?.trim() || "Built for Cannabis Retailers Scaling Fast",
+      heading: home?.wholesaleMidHeading?.trim() || "Built for Commercial Buyers Scaling Fast",
       description:
         home?.wholesaleMidDescription?.trim() ||
-        "Join our B2B wholesale programme for COA-verified THC vape inventory, deep volume discounts, and priority dispatch to the USA, UK and worldwide.",
+        "Join our B2B wholesale programme for COA-verified anabolic steroids, deep volume discounts, and priority dispatch to the UK, USA, and worldwide.",
       ctaLabel: home?.wholesaleMidCtaLabel?.trim() || "Apply for Wholesale",
       ctaHref: home?.wholesaleMidCtaHref?.trim() || "/wholesale",
     },
@@ -360,7 +360,7 @@ export function resolveHomePageContent(home: HomePage | null): ResolvedHomePageC
       heading: home?.blogHeading?.trim() || "From the Blog",
       description:
         home?.blogDescription?.trim() ||
-        "THC vape industry news, compliance guides, strain deep-dives, and wholesale buying tips for cannabis retailers.",
+        "Anabolic steroid industry insights, compound guides, cycle protocols, and wholesale buying tips for performance buyers.",
       emptyMessage:
         home?.blogEmptyMessage?.trim() || "Blog posts will appear here once published in Sanity.",
       viewAllLabel: home?.blogViewAllLabel?.trim() || "View All Posts",
@@ -370,14 +370,14 @@ export function resolveHomePageContent(home: HomePage | null): ResolvedHomePageC
       heading: home?.testimonialsHeading?.trim() || "Trusted by Thousands",
       intro:
         home?.testimonialsIntro?.trim() ||
-        "Real feedback from dispensaries, smoke shops, and wholesale partners sourcing bulk THC vapes from THCPensBulk.",
+        "Real feedback from athletes, bodybuilders, and wholesale partners sourcing certified anabolic steroids from SteroidsSupplies.",
     },
     faq: {
       eyebrow: home?.faqEyebrow?.trim() || "Related FAQs",
-      heading: home?.faqHeading?.trim() || "COA verification, product formats, bulk pricing & delivery",
+      heading: home?.faqHeading?.trim() || "Quality verification, compound formats, bulk pricing & delivery",
       description:
         home?.faqDescription?.trim() ||
-        "Straight answers on sourcing authentic THC vapes, available formats and potencies, B2B wholesale ordering, and our tracked USA & worldwide shipping.",
+        "Straight answers on sourcing certified anabolic steroids, available compounds and dosages, B2B wholesale ordering, and our tracked UK & worldwide shipping.",
       viewAllLabel: home?.faqViewAllLabel?.trim() || "View full FAQ page",
     },
     compliance: {

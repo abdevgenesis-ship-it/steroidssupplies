@@ -10,18 +10,18 @@ import { urlFor } from "@/lib/sanity";
 import { getAllBlogPosts } from "@/lib/sanityClient";
 
 export const metadata: Metadata = {
-  title: `THC Vape Industry Insights | ${SITE_NAME}`,
+  title: `Performance & AAS Industry Insights | ${SITE_NAME}`,
   description:
-    "Expert guides on THC vape industry trends, compliance, strain deep-dives, and wholesale buying strategies for cannabis retailers.",
+    "Expert guides on anabolic steroids, cycle protocols, compound profiles, and wholesale buying strategies for athletes and B2B buyers.",
   alternates: {
     canonical: `${SITE_URL}/blog`,
   },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/blog`,
-    title: `THC Vape Industry Insights | ${SITE_NAME}`,
+    title: `Performance & AAS Industry Insights | ${SITE_NAME}`,
     description:
-      "Expert guides on THC vape industry trends, compliance, strain deep-dives, and wholesale buying strategies for cannabis retailers.",
+      "Expert guides on anabolic steroids, cycle protocols, compound profiles, and wholesale buying strategies for athletes and B2B buyers.",
     siteName: SITE_NAME,
   },
 };
@@ -70,10 +70,10 @@ export default async function BlogPage() {
             </div>
             <div className="mt-5 max-w-4xl">
               <h1 className="font-heading text-4xl leading-[1.04] sm:text-5xl lg:text-6xl">
-                THC Vape Industry Insights
+                Performance & AAS Industry Insights
               </h1>
               <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Expert guides, compliance notes, and wholesale growth strategies for cannabis retailers and distributors.
+                Expert guides, cycle protocols, compound profiles, and wholesale strategies for athletes and B2B buyers.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">

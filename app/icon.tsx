@@ -14,11 +14,11 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#1a6b3c',
+          background: 'linear-gradient(135deg, #1a0608 0%, #09090b 100%)',
           borderRadius: 6,
         }}
       >
-        {/* Two-toned pharmaceutical capsule */}
+        {/* Two-toned pharmaceutical capsule — crimson / white */}
         <div
           style={{
             display: 'flex',
@@ -28,8 +28,8 @@ export default function Icon() {
             overflow: 'hidden',
           }}
         >
-          <div style={{ width: '50%', height: '100%', background: '#d97706' }} />
-          <div style={{ width: '50%', height: '100%', background: '#ffffff' }} />
+          <div style={{ width: '50%', height: '100%', background: '#c41e3a' }} />
+          <div style={{ width: '50%', height: '100%', background: '#f5f5f5' }} />
         </div>
       </div>
     ),

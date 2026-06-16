@@ -33,13 +33,13 @@ type HomeCategoryGridProps = {
 
 function iconByGroup(group?: string) {
   switch (group) {
-    case "Disposable Vapes":
+    case "Injectable Steroids":
       return Sparkles;
-    case "510 Cartridges":
+    case "Oral Steroids":
       return Pill;
-    case "Hardware":
+    case "PCT Supplements":
       return Package;
-    case "Accessories":
+    case "Performance Bundles":
       return Moon;
     default:
       return Package;
@@ -129,7 +129,7 @@ export async function HomeCategoryGrid({
                       </Link>
                     </div>
 
-                    <div className="flex h-full flex-col gap-2.5 bg-white p-5 sm:p-6 lg:p-7">
+                    <div className="flex h-full flex-col gap-2.5 bg-card p-5 sm:p-6 lg:p-7">
                       <div>
                         <div className="mb-1.5 inline-flex items-center gap-2 rounded-full border border-border bg-muted px-2 py-0.5">
                           <Icon className="h-3.5 w-3.5 text-foreground" aria-hidden="true" />

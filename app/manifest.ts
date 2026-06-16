@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Buy certified anabolic steroids online. B2C & B2B wholesale with guaranteed 48h international delivery.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#1a6b3c",
+    background_color: "#09090b",
+    theme_color: "#c41e3a",
     icons: [
       {
         src: "/icon",

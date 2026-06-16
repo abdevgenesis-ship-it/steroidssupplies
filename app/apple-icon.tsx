@@ -15,12 +15,12 @@ export default function AppleIcon() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(145deg, #1a6b3c 0%, #0d5c31 100%)',
+          background: 'linear-gradient(145deg, #c41e3a 0%, #7f1d1d 100%)',
           borderRadius: 40,
           gap: 10,
         }}
       >
-        {/* Large two-toned pharmaceutical capsule */}
+        {/* Large two-toned pharmaceutical capsule — white / near-black */}
         <div
           style={{
             display: 'flex',
@@ -30,8 +30,8 @@ export default function AppleIcon() {
             overflow: 'hidden',
           }}
         >
-          <div style={{ width: '50%', height: '100%', background: '#d97706' }} />
           <div style={{ width: '50%', height: '100%', background: '#ffffff' }} />
+          <div style={{ width: '50%', height: '100%', background: '#1a0608' }} />
         </div>
         {/* SS brand initials */}
         <div

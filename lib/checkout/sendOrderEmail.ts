@@ -94,11 +94,11 @@ export async function sendCheckoutOrderEmails(data: CheckoutOrderInput, maps?: O
   }
 
   const from =
-    process.env.RESEND_FROM_EMAIL?.trim() || "THCPensBulk <onboarding@resend.dev>";
+    process.env.RESEND_FROM_EMAIL?.trim() || "SteroidsSupplies <onboarding@resend.dev>";
   const notifyTo =
     process.env.ORDER_NOTIFY_EMAIL?.trim() ||
     process.env.WHOLESALE_NOTIFY_EMAIL?.trim() ||
-    "support@thcpensbulk.com";
+    "support@steroidssupplies.co.uk";
 
   const resend = new Resend(apiKey);
 
@@ -117,7 +117,7 @@ export async function sendCheckoutOrderEmails(data: CheckoutOrderInput, maps?: O
   const buyerResult = await resend.emails.send({
     from,
     to: [data.email],
-    subject: "We received your order — THCPensBulk",
+    subject: "We received your order — SteroidsSupplies",
     html: `
       <p>Hi ${escapeHtml(data.clientName)},</p>
       <p>Thanks for your order. Our team will confirm payment details and dispatch within 48 hours.</p>

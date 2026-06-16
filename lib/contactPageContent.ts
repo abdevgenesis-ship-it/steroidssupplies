@@ -31,9 +31,9 @@ export const CONTACT_PAGE_FALLBACK = {
   subjectOptions: DEFAULT_SUBJECTS,
   successTitle: "Message received",
   successMessage:
-    "Thanks for contacting THCPensBulk. A team member will follow up soon. If your request is urgent, reply to your confirmation email.",
+    "Thanks for contacting SteroidsSupplies. A team member will follow up soon. If your request is urgent, reply to your confirmation email.",
   detailsHeading: "Contact details",
-  contactEmail: "support@thcpensbulk.com",
+  contactEmail: "support@steroidssupplies.co.uk",
   contactPhone: "",
   businessHours:
     "Central Dispatch Intake: Logistics Unit 4, Gateway Industrial Estate, London, Greater London, E1 4NS\nCommercial Business Operating Hours: Monday through Friday, 08:30 to 17:30 GMT (Excluding recognized UK bank holidays).",

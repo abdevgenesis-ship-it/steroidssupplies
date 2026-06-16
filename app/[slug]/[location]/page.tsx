@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: ProgrammaticPageRouteProps): 
     };
   }
 
-  const categoryLabel = page.category.name || "Bulk THC Vapes";
+  const categoryLabel = page.category.name || "Anabolic Steroids";
   const title = `${categoryLabel} wholesale in ${page.locationName} | ${SITE_NAME}`;
   const description = page.seoDescription || `Wholesale bulk ${categoryLabel.toLowerCase()} in ${page.locationName}.`;
   const canonical = `${SITE_URL}/${categorySlug}/${location}`;
