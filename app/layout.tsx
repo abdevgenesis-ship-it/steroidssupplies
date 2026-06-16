@@ -18,6 +18,7 @@ import { ToastProvider } from "@/hooks/useToast";
 import { ToastViewport } from "@/components/ui/toast-viewport";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { AgeGateModal } from "@/components/AgeGateModal";
+import { AgeWarningBar } from "@/components/AgeWarningBar";
 
 const spaceGroteskHeading = Space_Grotesk({subsets:['latin'],weight:['400','500','600','700'],variable:'--font-heading'});
 
@@ -89,6 +90,7 @@ export default async function RootLayout({
                   text={siteContent.announcement.text}
                   href={siteContent.announcement.href}
                 />
+                <AgeWarningBar />
                 <Header categories={categories} />
                 {children}
                 <Footer
