@@ -18,14 +18,16 @@ export function AnnounceBar({
   text = "10% OFF all crypto payments (BTC, ETH, USDT).",
   href = "/how-to-buy",
 }: AnnounceBarProps) {
-  const [visible, setVisible] = useState<boolean | null>(null);
+  const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    setVisible(window.localStorage.getItem(ANNOUNCE_DISMISS_KEY) !== "true");
+    if (window.localStorage.getItem(ANNOUNCE_DISMISS_KEY) === "true") {
+      setDismissed(true);
+    }
 
     const onStorage = (event: StorageEvent) => {
       if (event.key === ANNOUNCE_DISMISS_KEY) {
-        setVisible(event.newValue !== "true");
+        setDismissed(event.newValue === "true");
       }
     };
 
@@ -35,10 +37,10 @@ export function AnnounceBar({
 
   const onDismiss = useCallback(() => {
     window.localStorage.setItem(ANNOUNCE_DISMISS_KEY, "true");
-    setVisible(false);
+    setDismissed(true);
   }, []);
 
-  if (visible !== true) {
+  if (dismissed) {
     return null;
   }
 
