@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-const AGE_GATE_COOKIE = "mgu_age_verified";
+const AGE_GATE_COOKIE = "ss_age_verified";
 const COOKIE_DAYS = 30;
 
 function getCookie(name: string): string | null {

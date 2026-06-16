@@ -7,7 +7,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 
-const ANNOUNCE_DISMISS_KEY = "bv_announce_dismissed";
+const ANNOUNCE_DISMISS_KEY = "ss_announce_dismissed";
 
 type AnnounceBarProps = {
   text?: string;

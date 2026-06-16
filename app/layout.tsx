@@ -16,6 +16,7 @@ import { CartProvider } from "@/hooks/useCart";
 import { ToastProvider } from "@/hooks/useToast";
 import { ToastViewport } from "@/components/ui/toast-viewport";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+import { AgeGateModal } from "@/components/AgeGateModal";
 
 const spaceGroteskHeading = Space_Grotesk({subsets:['latin'],weight:['400','500','600','700'],variable:'--font-heading'});
 
@@ -91,6 +92,7 @@ export default async function RootLayout({
                 warningText={siteContent.footer.warningText}
                 complianceText={siteContent.footer.complianceText}
               />
+              <AgeGateModal />
               <ToastViewport />
               <WhatsAppWidget />
               <Script
