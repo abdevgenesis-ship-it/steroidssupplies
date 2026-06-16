@@ -14,7 +14,7 @@ export type ShopProductCardData = {
   image?: string;
   brand: string;
   category: string;
-  productType: "Disposable" | "Cartridge" | "Pod";
+  productType: "Injectable" | "Oral" | "Tablet" | "PCT" | "Vial";
   puffCount: number;
   price: number;
   publishedAt: string;

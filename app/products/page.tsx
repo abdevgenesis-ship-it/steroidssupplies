@@ -127,7 +127,7 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
   const filterOptions = {
     categories: safeCategories,
     brands: safeBrands,
-    productTypes: Array.isArray(shopPage?.types) && shopPage.types.length > 0 ? shopPage.types : ["Disposable", "Cartridge", "Pod"],
+    productTypes: Array.isArray(shopPage?.types) && shopPage.types.length > 0 ? shopPage.types : ["Injectable", "Oral", "PCT"],
     priceRange: safePriceRange,
     puffRange: safePuffRange,
   };
