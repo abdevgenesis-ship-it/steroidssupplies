@@ -16,7 +16,6 @@ import { getCategories } from "@/lib/sanityClient";
 import { CartProvider } from "@/hooks/useCart";
 import { ToastProvider } from "@/hooks/useToast";
 import { ToastViewport } from "@/components/ui/toast-viewport";
-import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { AgeGateModal } from "@/components/AgeGateModal";
 import { AgeWarningBar } from "@/components/AgeWarningBar";
 
@@ -99,7 +98,6 @@ export default async function RootLayout({
                 />
                 <AgeGateModal />
                 <ToastViewport />
-                <WhatsAppWidget />
                 <Script
                   id="chatway"
                   src="https://cdn.chatway.app/widget.js?id=g2cCVSyBsiLJ"
