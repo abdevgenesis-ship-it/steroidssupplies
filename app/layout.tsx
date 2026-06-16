@@ -60,9 +60,10 @@ export default async function RootLayout({
     <html
       lang="en-GB"
       className={cn("antialiased dark", fontMono.variable, "font-sans", inter.variable, spaceGroteskHeading.variable)}
+      style={{ backgroundColor: '#09090b', colorScheme: 'dark' }}
       suppressHydrationWarning
     >
-      <body>
+      <body style={{ backgroundColor: '#09090b', color: '#fafafa' }}>
         {loadGa && gaId ? (
           <>
             <Script
