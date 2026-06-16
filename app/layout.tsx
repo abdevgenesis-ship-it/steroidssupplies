@@ -4,6 +4,7 @@ import Script from "next/script"
 
 import "./globals.css"
 import { isAnalyticsEnabled } from "@/lib/analytics/gtag"
+import { ThemeProvider } from "@/components/theme-provider"
 import { JsonLdProvider } from "@/components/DefaultSeoProvider"
 import { AnnounceBar } from "@/components/AnnounceBar"
 import { Header } from "@/components/Header"
@@ -79,30 +80,32 @@ export default async function RootLayout({
             </Script>
           </>
         ) : null}
-        <ToastProvider>
-          <CartProvider>
-            <JsonLdProvider>
-              <AnnounceBar
-                text={siteContent.announcement.text}
-                href={siteContent.announcement.href}
-              />
-              <Header categories={categories} />
-              {children}
-              <Footer
-                warningText={siteContent.footer.warningText}
-                complianceText={siteContent.footer.complianceText}
-              />
-              <AgeGateModal />
-              <ToastViewport />
-              <WhatsAppWidget />
-              <Script
-                id="chatway"
-                src="https://cdn.chatway.app/widget.js?id=g2cCVSyBsiLJ"
-                strategy="afterInteractive"
-              />
-            </JsonLdProvider>
-          </CartProvider>
-        </ToastProvider>
+        <ThemeProvider>
+          <ToastProvider>
+            <CartProvider>
+              <JsonLdProvider>
+                <AnnounceBar
+                  text={siteContent.announcement.text}
+                  href={siteContent.announcement.href}
+                />
+                <Header categories={categories} />
+                {children}
+                <Footer
+                  warningText={siteContent.footer.warningText}
+                  complianceText={siteContent.footer.complianceText}
+                />
+                <AgeGateModal />
+                <ToastViewport />
+                <WhatsAppWidget />
+                <Script
+                  id="chatway"
+                  src="https://cdn.chatway.app/widget.js?id=g2cCVSyBsiLJ"
+                  strategy="afterInteractive"
+                />
+              </JsonLdProvider>
+            </CartProvider>
+          </ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   )
