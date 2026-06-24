@@ -64,7 +64,7 @@ export function resolveCategoryPageContent(category: Category): ResolvedCategory
       fallbackDescription:
         renderTemplate(
           category.categoryHeroFallbackDescription?.trim() ||
-            "Browse {categoryName} with authentic, lab-verified stock, consistent UK & Ireland supply, and retail or bulk wholesale pricing.",
+            "Browse {categoryName} with authentic, lab-verified stock, worldwide supply, and retail or bulk wholesale pricing.",
           categoryName,
         ),
     },
@@ -82,7 +82,7 @@ export function resolveCategoryPageContent(category: Category): ResolvedCategory
     authority: {
       heading: renderTemplate(
         category.categoryAuthorityHeadingTemplate?.trim() ||
-          "Why {categoryName} Sell Across the UK & Ireland",
+          "Why {categoryName} Sell Worldwide",
         categoryName,
       ),
     },
