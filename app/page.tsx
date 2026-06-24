@@ -182,6 +182,14 @@ export default async function Page() {
         backgroundImageAlt={heroBackgroundImageAlt}
       />
       <HomeTrustStrip items={content.trustStrip} />
+      <SectionReveal delay={0.03}>
+        <HomeBrandPartners
+          brands={homepageBrands}
+          eyebrow={content.brands.eyebrow}
+          heading={content.brands.heading}
+          emptyMessage={content.brands.emptyMessage}
+        />
+      </SectionReveal>
       <SectionReveal delay={0.04}>
         <HomeAuthorityBlock
           eyebrow={content.authority.eyebrow}
@@ -211,14 +219,6 @@ export default async function Page() {
           steps={content.howTo.steps}
           ctaLabel={content.howTo.ctaLabel}
           ctaHref={content.howTo.ctaHref}
-        />
-      </SectionReveal>
-      <SectionReveal delay={0.06}>
-        <HomeBrandPartners
-          brands={homepageBrands}
-          eyebrow={content.brands.eyebrow}
-          heading={content.brands.heading}
-          emptyMessage={content.brands.emptyMessage}
         />
       </SectionReveal>
       <SectionReveal delay={0.07}>
