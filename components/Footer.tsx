@@ -78,14 +78,13 @@ export function Footer({
           <div className="flex flex-col gap-4 lg:col-span-1">
             <Link href="/" className="inline-block">
               <div className="font-heading text-[26px] font-semibold leading-tight tracking-widest">
-                <span className="block text-primary">THC</span>
-                <span className="block text-foreground">PENS</span>
-                <span className="block text-highlight">BULK</span>
+                <span className="block text-primary">STEROIDS</span>
+                <span className="block text-foreground">SUPPLIES</span>
               </div>
             </Link>
             <p className="text-[13px] leading-relaxed text-muted-foreground max-w-[200px]">
-              Licensed B2B wholesale distributor of bulk THC vapes and 510
-              cartridges. USA &amp; worldwide delivery.
+              Global B2C &amp; B2B wholesale supplier of certified anabolic
+              steroids and performance compounds. UK, USA &amp; worldwide delivery.
             </p>
           </div>
 
