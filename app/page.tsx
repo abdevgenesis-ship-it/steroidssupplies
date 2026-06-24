@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import { HomeHero } from "@/components/homepage/HomeHero";
-import { HomeCategoryGrid } from "@/components/homepage/HomeCategoryGrid";
 import { HomeComplianceBand } from "@/components/homepage/HomeComplianceBand";
 import { HomeAuthorityBlock } from "@/components/homepage/HomeAuthorityBlock";
 import { HomePromoBanner } from "@/components/homepage/HomePromoBanner";
@@ -117,7 +116,6 @@ export default async function Page() {
       return { title: page.title, href }
     })
     .filter((l): l is { title: string; href: string } => l !== null)
-  const homepageCategories = homePage?.featuredCategories ?? [];
   const homepageBrands = homePage?.featuredBrands ?? [];
   const content = resolveHomePageContent(homePage);
   const heroBackgroundImageUrl = resolveHomeHeroBackgroundUrl();
@@ -184,15 +182,6 @@ export default async function Page() {
         backgroundImageAlt={heroBackgroundImageAlt}
       />
       <HomeTrustStrip items={content.trustStrip} />
-      <SectionReveal delay={0.03} amount={0.08}>
-        <HomeCategoryGrid
-          categories={homepageCategories}
-          eyebrow={content.categories.eyebrow}
-          heading={content.categories.heading}
-          description={content.categories.description}
-          emptyMessage={content.categories.emptyMessage}
-        />
-      </SectionReveal>
       <SectionReveal delay={0.04}>
         <HomeAuthorityBlock
           eyebrow={content.authority.eyebrow}
