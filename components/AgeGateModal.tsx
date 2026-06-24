@@ -20,7 +20,7 @@ export function AgeGateModal() {
           Are you 18 or older?
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          You must be at least 18 years old to access this website and purchase food supplements and wellness products.
+          You must be at least 18 years old to access this website and purchase anabolic steroids and performance compounds.
         </p>
 
         <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">

@@ -1,4 +1,4 @@
-const HOME_HERO_BACKGROUND_URL = "/images/home-hero-thc.png";
+const HOME_HERO_BACKGROUND_URL = "/images/home-hero.png";
 const HOME_HERO_BACKGROUND_ALT =
   "SteroidsSupplies — pharmaceutical-grade anabolic steroids and performance compounds, abstract geometric background";
 

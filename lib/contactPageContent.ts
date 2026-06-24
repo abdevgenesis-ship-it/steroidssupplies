@@ -14,12 +14,12 @@ const DEFAULT_SUBJECTS: ContactSubjectOption[] = [
 export const CONTACT_EMAIL_DISPLAY_PLACEHOLDER = "[Email]";
 
 export const CONTACT_PAGE_FALLBACK = {
-  seoTitle: "Contact Us: Customer Care & B2B Wholesale Accounts UK",
+  seoTitle: "Contact SteroidsSupplies | 24/7 B2C & Wholesale Support",
   seoDescription:
-    "Reach our support team for order inquiries or connect directly with our commercial account managers to establish your corporate wholesale profile across the UK and Ireland.",
-  pageHeading: "Contact Our Customer Care and Enterprise B2B Support Teams",
+    "Get in touch with SteroidsSupplies. Reach our support team for B2C orders or connect with a wholesale account manager for bulk supply.",
+  pageHeading: "Contact SteroidsSupplies — Retail & Wholesale Support",
   introLead:
-    "Whether Interacting with Our General Retail Assistance Desk or Requesting Rapid Onboarding for a Tier-One Bulk Commercial Trade Profile, We Are Here to Support Your Journey",
+    "Our dedicated team of logistics experts and account managers is online 24/7 to facilitate your procurement needs.",
   formHeading: "Submit a Direct Assistance Request Ticket",
   formIntro:
     "Our integrated communications center is organized into dedicated functional branches to ensure your specific inquiry reaches an expert in that domain immediately. For rapid self-service assistance, please include your relevant 8-digit order receipt number or corporate company registration index.",
@@ -36,10 +36,10 @@ export const CONTACT_PAGE_FALLBACK = {
   contactEmail: "support@steroidssupplies.co.uk",
   contactPhone: "",
   businessHours:
-    "Central Dispatch Intake: Logistics Unit 4, Gateway Industrial Estate, London, Greater London, E1 4NS\nCommercial Business Operating Hours: Monday through Friday, 08:30 to 17:30 GMT (Excluding recognized UK bank holidays).",
-  responsePromise: "We respond within 24 hours (retail) and within 1 business hour (wholesale)",
+    "Monday–Friday, 08:30–17:30 UTC. Priority 24/7 support available for active wholesale accounts.",
+  responsePromise: "All customer inquiries are handled with confidentiality and resolved within a maximum of 12 hours.",
   paymentsNote:
-    "If you represent an independent pharmacy chain, an e-commerce health storefront, a beauty salon group, or an authorized local health stockist, do not utilize general retail communication channels. Please navigate straight to our secure **Wholesale Application Portal** to upload your active VAT credential profile. Our commercial auditing staff activates approved high-volume account tier privileges within 60 minutes of submission.",
+    "For B2B wholesale accounts, please use our Wholesale Application form to register your business. COA documentation and tiered pricing sheets are available on request.",
 };
 
 export type ResolvedContactPage = typeof CONTACT_PAGE_FALLBACK;

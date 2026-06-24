@@ -168,7 +168,7 @@ const DEFAULT_AUTHORITY: ResolvedAuthorityPoint[] = [
   {
     title: "Competitive Wholesale Pricing",
     description:
-      "Our **anabolic steroids wholesale** pricing tiers are built for commercial scale. The more you order, the lower your per-unit cost. Volume discounts apply from 50 units, with deeper breaks at 200 and 500+ units — true factory-direct margins.",
+      "Our **anabolic steroids wholesale** pricing tiers are built for commercial scale. The more you order, the lower your per-unit cost. Volume discounts apply automatically from our tier-two level — true factory-direct margins.",
     iconKey: "walletCards",
   },
   {
