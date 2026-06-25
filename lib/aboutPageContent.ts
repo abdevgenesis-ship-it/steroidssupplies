@@ -8,7 +8,7 @@ const fallbackStoryBody: PortableTextBlock[] = [
     markDefs: [],
     children: [
       {
-        text: "The performance compound market moves at a pace that most regional supply chains can't match. When demand for authenticated anabolic steroids surges, athletes and commercial buyers are left waiting weeks on unverified underground sources. SteroidsSupplies was founded to eliminate that bottleneck.",
+        text: "Founded by an elite collective of veteran organic chemists and international logistics experts, Steroids Supplies was built to solve a critical market vulnerability: the complete lack of verifiable purity and delivery transparency in the performance supplement industry. We maintain state-of-the-art laboratory facilities utilizing HPLC testing protocols to guarantee every compound meets exact pharmaceutical standards.",
       },
     ],
   },
@@ -18,17 +18,7 @@ const fallbackStoryBody: PortableTextBlock[] = [
     markDefs: [],
     children: [
       {
-        text: "Between exorbitant transatlantic freight costs, surprise customs duties, and multi-week delivery delays, accessing elite health products has been an expensive, unpredictable hurdle.",
-      },
-    ],
-  },
-  {
-    _type: "block",
-    style: "normal",
-    markDefs: [],
-    children: [
-      {
-        text: "Our platform was established to dismantle that hurdle permanently. We operate as a premier, dedicated domestic import and distribution network. By taking on the complex operational burdens of international freight sourcing, structural customs clearance, and regulatory compliance, we bridge the gap between premium global wellness manufacturers and the European market.",
+        text: "We do not believe performance enhancers should be sourced through unverified avenues. Our operation spans the entire globe, seamlessly servicing both individual retail consumers and high-volume commercial wholesale distribution networks. By maintaining absolute control over our manufacturing, storage, and discrete global shipping routes, we provide our clients with the fastest, safest, and most cost-effective path to acquiring premium performance gear on the market today.",
       },
     ],
   },
@@ -108,12 +98,12 @@ const fallbackMissionBody: PortableTextBlock[] = [
 ];
 
 export const ABOUT_PAGE_FALLBACK = {
-  seoTitle: "About SteroidsSupplies — Certified Global Performance Compound Supplier",
+  seoTitle: "About Steroids Supplies | Certified Performance Logistics",
   seoDescription:
-    "Learn how SteroidsSupplies became a trusted B2C and B2B wholesale supplier of certified anabolic steroids for athletes and commercial buyers across the UK, USA, and worldwide.",
-  pageHeading: "About SteroidsSupplies: Building a Better Performance Supply Chain",
+    "Read the history and operational standards of Steroids Supplies. We provide premium-grade performance compounds to retail and wholesale markets globally.",
+  pageHeading: "About Steroids Supplies – Redefining Anabolic Quality Standards",
   introLead:
-    "COA-Verified Anabolic Steroids, Wholesale Pricing, and Guaranteed 48H Global Delivery for Athletes and Commercial Buyers",
+    "The technology, chemistry, and international logistics driving our premium performance distribution network.",
   storyHeading: "Our Foundational Mission",
   storyBody: fallbackStoryBody,
   missionHeading: "What Sets Our Distribution Infrastructure Apart",

@@ -8,37 +8,24 @@ import { getCompliancePage } from "@/lib/sanityClient";
 import { getSiteContent, type LegalSection } from "@/lib/siteContent";
 
 const COMPLIANCE_FALLBACK = {
-  title: "Legality, Compliance, and Distribution Policies",
+  title: "Compliance, Legal Terms & Safety Notices",
+  pageHeading: "Legality, Jurisdictional Compliance, and Chemical Safety Documentation",
+  subtitle:
+    "Crucial legal frameworks and safety disclosures regarding the purchase, possession, and application of anabolic compounds.",
   description:
-    "Review the mandatory legal compliance documentation, jurisdictional guidelines, and chemical safety warnings governing SteroidsSupplies' global distribution of performance compounds.",
+    "Review the mandatory legal compliance documentation, local jurisdictional guidelines, and chemical safety warnings for Steroids Supplies.",
   sections: [
     {
-      title: "Overview of Our Compliance Operations",
+      title: "Jurisdictional Compliance",
       paragraphs: [
-        "Operating a transparent and legally sound supply pipeline is foundational to SteroidsSupplies. As a global supplier of performance compounds, our compliance department continuously audits inventory against destination-market legal standards.",
-        "We take full responsibility for ensuring that all products distributed from our facilities comply with applicable quality and safety standards. Buyers are solely responsible for compliance with local and national laws in their jurisdiction.",
+        "The purchase, import, and possession of anabolic androgenic steroids (AAS) are governed by distinct regional, domestic, and international laws that vary significantly from one country to another. It is the sole responsibility of the individual customer or wholesale purchaser to understand, evaluate, and adhere to the precise legal statutes, import restrictions, and prescription requirements enforced within their own country or local jurisdiction before initiating an order through our storefront. Steroids Supplies assumes zero legal liability for cross-border customs items that run contrary to localized laws.",
       ],
     },
     {
-      title: "1. Age Verification & Buyer Qualification",
+      title: "⚠️ MANDATORY MEDICAL WARNING AND ACCIDENTAL MISUSE NOTICE",
       paragraphs: [
-        "All buyers must confirm they are 18 years of age or older and that they operate in a jurisdiction where the purchase of anabolic steroids is legally permitted. SteroidsSupplies does not sell to individuals under 18 years of age.",
-      ],
-    },
-    {
-      title: "2. Jurisdictional Compliance",
-      paragraphs: [
-        "The purchase, import, and possession of anabolic androgenic steroids (AAS) are governed by distinct regional, domestic, and international laws that vary significantly from one country to another. SteroidsSupplies assumes zero legal liability for cross-border customs items contrary to localised laws.",
-        "**Important Buyer Responsibility:** Buyers are solely responsible for ensuring that products purchased from SteroidsSupplies may be lawfully received in their jurisdiction. We do not provide legal advice and recommend all buyers consult qualified legal counsel prior to placing orders.",
-      ],
-    },
-    {
-      title: "3. COA Verification & Quality Assurance",
-      paragraphs: ["Every product in our catalog is supported by a Certificate of Analysis (COA) from an accredited third-party laboratory. Our QA process includes:"],
-      bullets: [
-        "HPLC verification of active compound potency and correct ester weight against labeled specifications.",
-        "Heavy metals, residual solvent, and bacterial contamination testing to confirm pharmaceutical safety thresholds.",
-        "Batch number reconciliation between manufacturing documentation and independent COA records.",
+        "Anabolic steroids are highly active, potent hormonal compounds that profoundly alter human endocrinology. Unsupervised, excessive, or unverified administration can result in severe and potentially permanent health complications. These include cardiovascular strain, left ventricular hypertrophy, severe hepatic toxicity, profound suppression of the natural hypothalamic-pituitary-gonadal axis (HPGA), dyslipidemia, and psychiatric alterations.",
+        "All materials, chemical profiles, and descriptions hosted across this domain are intended strictly for educational, research, and informational contexts. They do not constitute professional medical advice, diagnosis, or treatment protocols. Never implement any compound without direct medical supervision from an independent, licensed clinical professional.",
       ],
     },
   ],
@@ -46,14 +33,14 @@ const COMPLIANCE_FALLBACK = {
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getCompliancePage();
-  const title = page?.title?.trim() || COMPLIANCE_FALLBACK.title;
+  const metaTitle = (page as { title?: string } | null)?.title?.trim() || COMPLIANCE_FALLBACK.title;
   const description = page?.description?.trim() || COMPLIANCE_FALLBACK.description;
 
   return {
-    title: `${title} | ${SITE_NAME}`,
+    title: `${metaTitle} | ${SITE_NAME}`,
     description,
     openGraph: {
-      title: `${title} | ${SITE_NAME}`,
+      title: `${metaTitle} | ${SITE_NAME}`,
       description,
       type: "website",
       url: `${SITE_URL}/compliance`,
@@ -68,7 +55,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function CompliancePage() {
   const [content, page] = await Promise.all([getSiteContent(), getCompliancePage()]);
 
-  const title = page?.title?.trim() || COMPLIANCE_FALLBACK.title;
+  const pageHeading = (page as { pageHeading?: string } | null)?.pageHeading?.trim() || COMPLIANCE_FALLBACK.pageHeading;
+  const subtitle = (page as { subtitle?: string } | null)?.subtitle?.trim() || COMPLIANCE_FALLBACK.subtitle;
   const sections = page?.sections && page.sections.length > 0 ? page.sections : COMPLIANCE_FALLBACK.sections;
   const lastUpdated = page?.lastUpdated
     ? new Date(page.lastUpdated).toLocaleDateString()
@@ -78,7 +66,8 @@ export default async function CompliancePage() {
     <div className="min-h-screen bg-background">
       <section className="border-section-b bg-card section-y-tight">
         <Container>
-          <h1 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">{title}</h1>
+          <h1 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">{pageHeading}</h1>
+          <p className="mt-2 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">{subtitle}</p>
           <p className="mt-2 text-sm text-muted-foreground">Last updated: {lastUpdated}</p>
         </Container>
       </section>

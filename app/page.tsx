@@ -26,24 +26,19 @@ type FaqJsonLdItem = {
 
 const fallbackFaqItems: FaqJsonLdItem[] = [
   {
-    question: "Where can I buy anabolic steroids online with guaranteed delivery?",
+    question: "Where can I buy steroids online with a guaranteed delivery?",
     answer:
-      "You can buy certified anabolic steroids online safely right here at SteroidsSupplies. We provide an ironclad delivery guarantee on all orders, utilizing advanced routing and discrete packaging to ensure your package arrives within 48 hours globally.",
+      "You can buy steroids online safely right here at Steroids Supplies. We provide an ironclad delivery guarantee on all orders, utilizing advanced routing and discrete packaging to ensure your package arrives within 48 hours globally.",
   },
   {
-    question: "Are your anabolic steroids verified by laboratory testing?",
+    question: "Are your anabolic steroids for sale verified by laboratory testing?",
     answer:
-      "Yes. Every product listed across our Anavar, Trenbolone, and wholesale categories undergoes strict third-party HPLC analysis to guarantee absolute purity, correct ester weight, and zero bacterial contamination. COA documentation is available on request.",
+      "Yes. Every product listed across our Anavar, Trenbolone, and wholesale categories undergoes strict third-party HPLC analysis to guarantee absolute purity, correct ester weight, and zero bacterial contamination.",
   },
   {
     question: "Do you offer same-day priority dispatch for international orders?",
     answer:
-      "Yes. If you select our Same-Day Priority Delivery option at checkout, your order is picked, vacuum-sealed, and dispatched through our priority international express courier network within hours of order confirmation.",
-  },
-  {
-    question: "What is the minimum order for wholesale pricing?",
-    answer:
-      "Volume discounts begin at our tier-two level. Adding bulk volumes of Anavar, Trenbolone, or mixed performance lines automatically reduces the individual unit price in real time at checkout — no separate wholesale account required.",
+      "Absolutely. If you select our Same-Day Priority Delivery option at checkout, your order is picked, vacuum-sealed, and dispatched through our priority international express courier network within hours.",
   },
 ];
 

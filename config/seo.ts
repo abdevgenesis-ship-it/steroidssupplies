@@ -14,7 +14,7 @@ const getSiteUrl = () => {
 
 export const SITE_URL = getSiteUrl();
 
-export const SITE_NAME = 'SteroidsSupplies';
+export const SITE_NAME = 'Steroids Supplies';
 
 export const SITE_DOMAIN = 'steroidssupplies.co.uk';
 
@@ -23,10 +23,10 @@ export const SUPPORT_EMAIL = `support@${SITE_DOMAIN}`;
 export const WHOLESALE_EMAIL = `sales@${SITE_DOMAIN}`;
 
 /** All-caps label for footer copyright line */
-export const FOOTER_BRAND_LABEL = 'STEROIDSSUPPLIES';
+export const FOOTER_BRAND_LABEL = 'STEROIDS SUPPLIES';
 
 /** Footer compliance sentence prefix (before "complies with…") */
-export const FOOTER_COMPLIANCE_PREFIX = 'STEROIDSSUPPLIES';
+export const FOOTER_COMPLIANCE_PREFIX = 'STEROIDS SUPPLIES';
 
 /** Public marketing URL for a category hub (matches sitemap / client URLs). */
 export function categoryPublicPath(slug: string): `/${string}` {

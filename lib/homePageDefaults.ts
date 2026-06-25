@@ -161,21 +161,20 @@ const DEFAULT_TRUST: ResolvedTrustStripItem[] = [
 const DEFAULT_AUTHORITY: ResolvedAuthorityPoint[] = [
   {
     title: "Institutional Quality Control",
-    description:
-      "Every compound is verified for exact dosing and zero heavy metals via strict third-party **HPLC analysis** — guaranteeing absolute purity, correct ester weight, and zero bacterial contamination. The same standard elite athletes and research institutions demand.",
+    description: "Every compound is verified for exact dosing and zero heavy metals.",
     iconKey: "badgeCheck",
-  },
-  {
-    title: "Competitive Wholesale Pricing",
-    description:
-      "Our **anabolic steroids wholesale** pricing tiers are built for commercial scale. The more you order, the lower your per-unit cost. Volume discounts apply automatically from our tier-two level — true factory-direct margins.",
-    iconKey: "walletCards",
   },
   {
     title: "Unrivaled Global Logistics",
     description:
-      "Every package is discrete, **vacuum-sealed**, and backed by a 100% customs clearance guarantee. Our international logistics network converts standard shipping bottlenecks into a seamless 48-hour delivery reality to the UK, USA, Europe, and worldwide.",
+      "Every package is discrete, **vacuum-sealed**, and backed by a 100% customs clearance guarantee.",
     iconKey: "shieldCheck",
+  },
+  {
+    title: "B2C & B2B Flexibility",
+    description:
+      "Scale from single-cycle personal use to massive commercial wholesale volumes instantly.",
+    iconKey: "walletCards",
   },
 ];
 
@@ -290,21 +289,22 @@ export function resolveHomePageContent(home: HomePage | null): ResolvedHomePageC
       eyebrow: home?.authorityEyebrow?.trim() || "Certified Global Performance Supplier",
       heading:
         home?.authorityHeading?.trim() ||
-        "Premium Anabolic Steroids for Sale with Guaranteed Delivery",
+        "Buy Steroids Online for Maximum Hypertrophy and Performance",
       intro:
         home?.authorityIntro?.trim() ||
         (() => {
           const lead =
-            "When you choose to **buy anabolic steroids online** from SteroidsSupplies, you are bypassing underground black-market guesswork and tapping directly into an institutional-grade supply chain. We specialize in bringing the highest purity **anabolic steroids for sale** straight to elite athletes, bodybuilders, and wholesale buyers across the UK, USA, and worldwide. Every single batch is third-party tested, ensuring that when you order through our encrypted platform, you receive unmatched potency at the best prices on the market.";
+            "When you choose to **buy steroids online** from Steroids Supplies, you are bypassing underground black-market guesswork and tapping directly into an institutional-grade supply chain. We specialize in bringing the highest purity anabolic steroids for sale straight to elite athletes, bodybuilders, and wholesale buyers across the USA and worldwide. Every single batch is third-party tested, ensuring that when you **order anabolic steroids** through our encrypted platform, you receive unmatched potency at the best prices on the market. Browse our verified inventory today and experience the power of immediate fulfillment.";
           const tail = [
-            "To safely buy steroids online, athletes must look beyond flash marketing and prioritize rigorous laboratory verification. Our retail e-commerce storefront and wholesale distribution channels are meticulously structured to provide an ultra-secure environment to **purchase anabolic steroids**. Whether you are looking for oral anabolic steroids to kickstart a lean bulk or injectable anabolic steroids for an advanced contest prep stack, our catalogue contains only the top anabolic steroids on the market.",
-            "We cut out the middlemen to offer **steroids online** and global shipments at deep factory-direct discounts. Don't risk your health or money on unverified underground labs — purchase from a verified global supplier that guarantees your gear arrives safely.",
-            "Our catalog spans the most in-demand compounds your cycle demands:",
+            "To safely **buy steroids online**, athletes must look beyond flash marketing and prioritize rigorous laboratory verification. Our retail e-commerce storefront and wholesale distribution channels are meticulously structured to provide an ultra-secure environment to purchase anabolic steroids. Whether you are looking for oral anabolic steroids to kickstart a lean bulk or injectable anabolic steroids for an advanced contest prep stack, our catalogue contains only the top anabolic steroids on the market.",
+            "We cut out the middlemen to offer **steroids uk online** and global shipments at deep factory-direct discounts. Don't risk your health or money on unverified underground labs; purchase from a verified global supplier that guarantees your gear arrives safely at your doorstep.",
           ].join("\n\n");
           const outro = [
-            "**Fast Tracked Shipping Across the UK, USA & Worldwide**",
-            "We understand that supply consistency is critical. Our fulfillment network is engineered for speed: orders confirmed before our daily cutoff are packaged and handed to shipping partners within hours, with 48-hour tracked delivery as standard.",
-            "International wholesale orders to the UK, Europe, and worldwide ship via tracked courier with full insurance on every consignment and our 100% customs clearance guarantee.",
+            "**Premium Performance Steroids for Sale with Guaranteed Delivery**",
+            "Navigating where to buy steroids safely shouldn't be a gamble. At Steroids Supplies, we maintain a flawless logistical network that converts standard shipping bottlenecks into a seamless 48-hour delivery reality.",
+            "**Advanced Cycle Synergies: Injectable vs. Oral Anabolic Steroids**",
+            "Optimizing human performance requires an exact understanding of compound administration. Elite competitors often stack high-affinity injectable anabolic steroids with rapid-acting oral anabolic steroids to maximize receptor saturation.",
+            "For those looking to order anabolic steroids for body recomposition, selecting the correct delivery mechanism is critical to managing biological half-lives and reducing liver strain. Our inventory features the absolute gold standards of the industry, allowing you to buy anabolic steroids online that match your precise biological milestones.",
           ].join("\n\n");
           return `${lead}${HOME_AUTHORITY_INTRO_H2_MARKER}${tail}${HOME_AUTHORITY_INTRO_OUTRO_MARKER}${outro}`;
         })(),

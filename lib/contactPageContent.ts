@@ -14,15 +14,15 @@ const DEFAULT_SUBJECTS: ContactSubjectOption[] = [
 export const CONTACT_EMAIL_DISPLAY_PLACEHOLDER = "[Email]";
 
 export const CONTACT_PAGE_FALLBACK = {
-  seoTitle: "Contact SteroidsSupplies | 24/7 B2C & Wholesale Support",
+  seoTitle: "Contact Steroids Supplies | 24/7 Priority Support",
   seoDescription:
-    "Get in touch with SteroidsSupplies. Reach our support team for B2C orders or connect with a wholesale account manager for bulk supply.",
-  pageHeading: "Contact SteroidsSupplies — Retail & Wholesale Support",
+    "Reach out to the customer support team at Steroids Supplies. Get immediate help with retail orders, custom wholesale tiers, and tracking.",
+  pageHeading: "Contact Steroids Supplies – Direct Retail & Wholesale Support",
   introLead:
     "Our dedicated team of logistics experts and account managers is online 24/7 to facilitate your procurement needs.",
   formHeading: "Submit a Direct Assistance Request Ticket",
   formIntro:
-    "Our integrated communications center is organized into dedicated functional branches to ensure your specific inquiry reaches an expert in that domain immediately. For rapid self-service assistance, please include your relevant 8-digit order receipt number or corporate company registration index.",
+    "At Steroids Supplies, we back up our lightning-fast 48-hour shipping with responsive, round-the-clock customer support. Whether you are an individual client tracking a priority express order or a high-volume commercial wholesale buyer coordinating a massive bulk inventory shipment, our team is standing by to assist. To reach our support staff, please utilize our fully encrypted secure contact forms, or connect directly via our monitored secure chat channels listed on this page.",
   nameFieldLabel: "Full name",
   emailFieldLabel: "Email address",
   subjectFieldLabel: "Subject",
@@ -31,13 +31,13 @@ export const CONTACT_PAGE_FALLBACK = {
   subjectOptions: DEFAULT_SUBJECTS,
   successTitle: "Message received",
   successMessage:
-    "Thanks for contacting SteroidsSupplies. A team member will follow up soon. If your request is urgent, reply to your confirmation email.",
+    "Thanks for contacting Steroids Supplies. A team member will follow up soon. If your request is urgent, reply to your confirmation email.",
   detailsHeading: "Contact details",
   contactEmail: "support@steroidssupplies.co.uk",
   contactPhone: "",
   businessHours:
     "Monday–Friday, 08:30–17:30 UTC. Priority 24/7 support available for active wholesale accounts.",
-  responsePromise: "All customer inquiries are handled with confidentiality and resolved within a maximum of 12 hours.",
+  responsePromise: "All customer inquiries are handled with absolute confidentiality and resolved within a maximum of 12 hours.",
   paymentsNote:
     "For B2B wholesale accounts, please use our Wholesale Application form to register your business. COA documentation and tiered pricing sheets are available on request.",
 };
