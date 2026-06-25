@@ -127,22 +127,47 @@ export const sanityQueries = {
   categoryBySlug: groq`*[_type == "category" && slug.current == $slug][0]{
     ...,
     relatedGuides,
-    "categoryFaqItems": categoryFaqItems[]->{
-      _id,
-      _type,
-      question,
-      answer,
-      category,
-      ctaLabel,
-      ctaHref,
-      order,
-      isActive,
-      "productCategories": productCategories[]->{
+    "categoryFaqItems": (
+      coalesce(categoryFaqItems[]->{
         _id,
-        name,
-        slug
+        _type,
+        question,
+        answer,
+        category,
+        ctaLabel,
+        ctaHref,
+        order,
+        isActive,
+        "productCategories": productCategories[]->{
+          _id,
+          name,
+          slug
+        }
+      }, []) +
+      *[
+        _type == "faqItem" &&
+        coalesce(isActive, true) == true &&
+        (
+          category == ^.name ||
+          references(^._id)
+        )
+      ] | order(order asc){
+        _id,
+        _type,
+        question,
+        answer,
+        category,
+        ctaLabel,
+        ctaHref,
+        order,
+        isActive,
+        "productCategories": productCategories[]->{
+          _id,
+          name,
+          slug
+        }
       }
-    },
+    ),
     "relatedCategories": relatedCategories[]->{
       _id,
       name,

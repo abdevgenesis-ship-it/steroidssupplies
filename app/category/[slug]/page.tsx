@@ -150,13 +150,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       ?.map((item) => item?.trim())
       .filter((item): item is string => Boolean(item)) ?? [];
 
+  const seenFaqIds = new Set<string>();
   const categoryFaqItems =
     category.categoryFaqItems
       ?.filter((item) => {
         if (item?.isActive === false) return false;
+        if (seenFaqIds.has(item._id)) return false;
         const mappedCategories = item?.productCategories ?? [];
-        if (mappedCategories.length === 0) return true;
-        return mappedCategories.some((mapped) => mapped?.slug?.current === slug);
+        const matchesCategory =
+          mappedCategories.length === 0 ||
+          mappedCategories.some((mapped) => mapped?.slug?.current === slug);
+        if (matchesCategory) {
+          seenFaqIds.add(item._id);
+        }
+        return matchesCategory;
       })
       .map((item) => ({
         id: item._id,

@@ -194,7 +194,9 @@ export type FAQItem = SanityDocumentBase & {
     | "Orals"
     | "PCT"
     | "Steroids"
-    | "Wholesale";
+    | "Wholesale"
+    | "Anavar"
+    | "Trenbolone";
   productCategories?: Array<{
     _id: string;
     name?: string;
