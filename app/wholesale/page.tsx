@@ -8,6 +8,7 @@ import { WholesaleFaqSection } from "@/components/wholesale/WholesaleFaqSection"
 import { WholesaleHeroSection } from "@/components/wholesale/WholesaleHeroSection";
 import { WholesaleHowItWorksSection } from "@/components/wholesale/WholesaleHowItWorksSection";
 import { WholesaleInquirySection } from "@/components/wholesale/WholesaleInquirySection";
+import { WholesaleSemanticContentSection } from "@/components/wholesale/WholesaleSemanticContentSection";
 import { WholesaleTestimonialsSection } from "@/components/wholesale/WholesaleTestimonialsSection";
 import { SITE_URL } from "@/config/seo";
 import { getWholesalePageData } from "@/lib/wholesale/content";
@@ -90,6 +91,10 @@ export default async function WholesalePage() {
       <main className="bg-background pb-14 text-foreground">
         <SectionReveal y={18}>
           <WholesaleHeroSection content={content} />
+        </SectionReveal>
+
+        <SectionReveal delay={0.02}>
+          <WholesaleSemanticContentSection content={content} />
         </SectionReveal>
 
         <SectionReveal delay={0.03}>

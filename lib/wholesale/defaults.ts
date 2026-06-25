@@ -12,6 +12,48 @@ export const DEFAULT_WHOLESALE = {
     "Secure premium wholesale volume accounts for commercial distribution, gym networks, and retail resellers with an unshakeable international supply chain.",
   heroTrustLine1: "Guaranteed 48H Priority Shipping",
   heroTrustLine2: "Automated Tiered Volume Discounts",
+  introSectionHeading: "Section 1: Introduction",
+  introSectionText:
+    "Welcome to the core distribution engine of our enterprise. Our anabolic steroids wholesale platform provides commercial gym owners, private retail labels, and high-volume independent distributors with direct access to unmatched manufacturing volume. We have completely eliminated complex wholesale registration and login barriers. Our storefront automatically applies three progressive tiered discount levels directly to listed products based on your total order volume. Buy wholesale gear at true manufacturing costs and leverage our guaranteed 48-hour priority shipping network.",
+  semanticContentHeading: "Section 2: Rich Text & Semantic Content",
+  semanticContentSections: [
+    {
+      heading: "Anabolic Steroids Wholesale Hub for Verified Bulk Procurement",
+      paragraphs: [
+        "Establishing an unbroken supply line through an anabolic steroids wholesale contract is the cornerstone of running a highly lucrative distribution business. At Steroids Supplies, we operate custom-built laboratory facilities capable of outputting massive volumes of pure wholesale anabolic steroids for sale.",
+        "Resellers can seamlessly browse our integrated catalog to secure extensive quantities of raw AAS steroids buy options, high-demand oral tablets, and stable oil injections. Every single bulk batch is accompanied by comprehensive laboratory analysis, giving your downstream retail customers complete confidence.",
+      ],
+    },
+    {
+      heading: "High-Margin Tiered Pricing Matrices on Global Shipments",
+      paragraphs: [
+        "Our system completely removes the friction of manual quoting by utilizing dynamic checkout pricing tiers. The more units your retail business orders, the lower your per-unit cost drops automatically.",
+      ],
+    },
+    {
+      heading: "Global Supply Reliability and Secure Commercial Logistics",
+      paragraphs: [
+        "If you need to buy anabolic steroids online at bulk scale, security and transit timing are non-negotiable. We pack all commercial orders using industrial vacuum sealing, customized non-descript container shapes, and completely anonymous shipping routes. This guarantees an unmatched customs clearance rate into the USA, mainland Europe, and international distribution hubs. Scale your business, protect your margins, and keep your retail shelves stocked with the finest performance gear on earth.",
+      ],
+    },
+  ],
+  wholesaleTargetRows: [
+    {
+      target: "Gym Network Supplies",
+      assetAdvantage: "Bulk Oral & Injectable Stacks",
+      logisticalDispatch: "48H Discrete Courier",
+    },
+    {
+      target: "Domestic Distribution Hubs",
+      assetAdvantage: "Mass 10ml Vials & Raw Tabs",
+      logisticalDispatch: "Same-Day Priority Freight",
+    },
+    {
+      target: "International Storefronts",
+      assetAdvantage: "Multi-Brand Custom Inventory",
+      logisticalDispatch: "100% Customs Clearance",
+    },
+  ],
   whyHeading: "Anabolic Steroids Wholesale Hub for Verified Bulk Procurement",
   whyIntro:
     "Welcome to the core distribution engine of our enterprise. Our anabolic steroids wholesale platform provides commercial gym owners, private retail labels, and high-volume independent distributors with direct access to unmatched manufacturing volume. We have completely eliminated complex wholesale registration and login barriers. Our storefront automatically applies three progressive tiered discount levels directly to listed products based on your total order volume. Buy wholesale gear at true manufacturing costs and leverage our guaranteed 48-hour priority shipping network.",

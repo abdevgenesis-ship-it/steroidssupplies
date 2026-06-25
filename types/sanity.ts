@@ -471,6 +471,17 @@ export type WholesaleFaqDoc = {
   answer?: string;
 };
 
+export type WholesaleSemanticContentSectionDoc = {
+  heading?: string;
+  paragraphs?: string[];
+};
+
+export type WholesaleTargetRowDoc = {
+  target?: string;
+  assetAdvantage?: string;
+  logisticalDispatch?: string;
+};
+
 export type WholesaleRequestPageDoc = {
   badge?: string;
   heading?: string;
@@ -493,6 +504,11 @@ export type WholesalePageDoc = SanityDocumentBase & {
   heroSubhead?: string;
   heroTrustLine1?: string;
   heroTrustLine2?: string;
+  introSectionHeading?: string;
+  introSectionText?: string;
+  semanticContentHeading?: string;
+  semanticContentSections?: WholesaleSemanticContentSectionDoc[];
+  wholesaleTargetRows?: WholesaleTargetRowDoc[];
   whyHeading?: string;
   whyIntro?: string;
   benefits?: WholesaleBenefitDoc[];

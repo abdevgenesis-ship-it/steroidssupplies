@@ -35,6 +35,17 @@ export type VolumeTierMerged = { tier: string; note: string };
 
 export type WholesaleFaqMerged = { question: string; answer: string };
 
+export type WholesaleSemanticContentSectionMerged = {
+  heading: string;
+  paragraphs: string[];
+};
+
+export type WholesaleTargetRowMerged = {
+  target: string;
+  assetAdvantage: string;
+  logisticalDispatch: string;
+};
+
 export type WholesaleRequestPageMerged = {
   badge: string;
   heading: string;
@@ -56,6 +67,11 @@ export type WholesaleCmsFlags = {
   heroSubhead: boolean;
   heroTrustLine1: boolean;
   heroTrustLine2: boolean;
+  introSectionHeading: boolean;
+  introSectionText: boolean;
+  semanticContentHeading: boolean;
+  semanticContentSections: boolean;
+  wholesaleTargetRows: boolean;
   whyHeading: boolean;
   whyIntro: boolean;
   benefits: boolean;
@@ -101,6 +117,11 @@ export type MergedWholesalePage = {
   heroSubhead: string;
   heroTrustLine1: string;
   heroTrustLine2: string;
+  introSectionHeading: string;
+  introSectionText: string;
+  semanticContentHeading: string;
+  semanticContentSections: WholesaleSemanticContentSectionMerged[];
+  wholesaleTargetRows: WholesaleTargetRowMerged[];
   whyHeading: string;
   whyIntro: string;
   benefits: WholesaleBenefitMerged[];
@@ -183,6 +204,61 @@ function mergeWholesale(doc: WholesalePageDoc | null): {
   set("heroTrustLine1", isNonEmpty(doc?.heroTrustLine1));
   const heroTrustLine2 = isNonEmpty(doc?.heroTrustLine2) ? doc!.heroTrustLine2!.trim() : d.heroTrustLine2;
   set("heroTrustLine2", isNonEmpty(doc?.heroTrustLine2));
+
+  const introSectionHeading = isNonEmpty(doc?.introSectionHeading)
+    ? doc!.introSectionHeading!.trim()
+    : d.introSectionHeading;
+  set("introSectionHeading", isNonEmpty(doc?.introSectionHeading));
+  const introSectionText = isNonEmpty(doc?.introSectionText)
+    ? doc!.introSectionText!.trim()
+    : d.introSectionText;
+  set("introSectionText", isNonEmpty(doc?.introSectionText));
+  const semanticContentHeading = isNonEmpty(doc?.semanticContentHeading)
+    ? doc!.semanticContentHeading!.trim()
+    : d.semanticContentHeading;
+  set("semanticContentHeading", isNonEmpty(doc?.semanticContentHeading));
+
+  let semanticContentSections: WholesaleSemanticContentSectionMerged[] =
+    d.semanticContentSections.map((section) => ({
+      heading: section.heading,
+      paragraphs: [...section.paragraphs],
+    }));
+  const sanitizedSemanticSections =
+    doc?.semanticContentSections
+      ?.map((section) => ({
+        heading: section.heading?.trim() || "",
+        paragraphs:
+          section.paragraphs
+            ?.map((paragraph) => paragraph?.trim())
+            .filter((paragraph): paragraph is string => Boolean(paragraph)) ?? [],
+      }))
+      .filter((section) => section.heading && section.paragraphs.length > 0) ?? [];
+  if (sanitizedSemanticSections.length > 0) {
+    semanticContentSections = sanitizedSemanticSections;
+    set("semanticContentSections", true);
+  } else {
+    set("semanticContentSections", false);
+  }
+
+  let wholesaleTargetRows: WholesaleTargetRowMerged[] = d.wholesaleTargetRows.map((row) => ({
+    target: row.target,
+    assetAdvantage: row.assetAdvantage,
+    logisticalDispatch: row.logisticalDispatch,
+  }));
+  const sanitizedTargetRows =
+    doc?.wholesaleTargetRows
+      ?.map((row) => ({
+        target: row.target?.trim() || "",
+        assetAdvantage: row.assetAdvantage?.trim() || "",
+        logisticalDispatch: row.logisticalDispatch?.trim() || "",
+      }))
+      .filter((row) => row.target && row.assetAdvantage && row.logisticalDispatch) ?? [];
+  if (sanitizedTargetRows.length > 0) {
+    wholesaleTargetRows = sanitizedTargetRows;
+    set("wholesaleTargetRows", true);
+  } else {
+    set("wholesaleTargetRows", false);
+  }
 
   const whyHeading = isNonEmpty(doc?.whyHeading) ? doc!.whyHeading!.trim() : d.whyHeading;
   set("whyHeading", isNonEmpty(doc?.whyHeading));
@@ -378,6 +454,11 @@ function mergeWholesale(doc: WholesalePageDoc | null): {
     heroSubhead,
     heroTrustLine1,
     heroTrustLine2,
+    introSectionHeading,
+    introSectionText,
+    semanticContentHeading,
+    semanticContentSections,
+    wholesaleTargetRows,
     whyHeading,
     whyIntro,
     benefits,
